@@ -103,6 +103,8 @@ union {
 - [ ] `::`
 - [ ] `.`
 
+[Reference](https://www.tutorialspoint.com/operators-that-cannot-be-overloaded-in-cplusplus)
+
 #### Q9. Which of the following shows the contents of vector pointed by v1 and v2 after running this code?
 
 ```cpp
@@ -194,12 +196,14 @@ auto x = 4000.22;
 - [ ] It specifies that x is a variable with automatic storage duration.
 - [ ] It specifies that more memory will be allocated for x in case it needs more space, avoiding loss of data due to overflow.
 
-#### Q14. What is a class template?
+#### Q14. A class template is a **\_**?
 
-- [x] It's a class written with the generic programming, specifying behavior in terms of type parameter rather than specific type.
-- [ ] It's a blank superclass intended for inheritance and polymorphism.
-- [ ] It's class that only consists of member variable, with no constructor, destructor nor member functions.
-- [ ] It's skelton source code for a class where the programmer has to fill in specific parts to define the data types and algorithms used.
+- [x] class written with the generic programming paradigm, specifying behavior in terms of type parameter rather than specific type.
+- [ ] blank superclass intended for inheritance and polymorphism.
+- [ ] lass that only consists of member variable, with no constructor, destructor nor member functions.
+- [ ] skeleton source code for a class where the programmer has to fill in specific parts to define the data types and algorithms used.
+
+[Reference](https://www.mygreatlearning.com/blog/templates-in-cpp/)
 
 #### Q15. What is the ternary operator equivalent to this code snippet?
 
@@ -214,6 +218,8 @@ else
 - [ ] `y=if(x?a:b);`
 - [ ] `y=(x&a)?a:(x&b)?b:0;`
 - [x] `y=x?a:b;`
+
+[Reference](https://www.w3schools.com/cpp/cpp_conditions_shorthand.asp)
 
 #### Q16. What is the output of this code?
 
@@ -948,20 +954,21 @@ std::cout<<nums[0]<<nums[1]<<nums[2];
 
 [Reference](https://en.cppreference.com/w/cpp/language/array)
 
-#### Q55. What is `child_t` in this code?
+#### Q55. Does this code cause a compiler error? If so, why, and if not, what is `child_t`?
 
 ```cpp
 typedef struct{
     unsigned int  age    : 4;
     unsigned char gender : 1;
+    char                 : 0;
     unsigned int  size   : 2;
 }child_t;
 ```
 
-- [ ] It is a type defined as a structure with three unsigned fields initialized as age=4, gender=1, and size=2.
-- [x] It is a type defined as a structure with bit fields, with 4 bits for age, 1 bit for gender, and 2 bits for size.
-- [ ] This code causes a compiler error because the colon character is not allowed in struct definitions.
-- [ ] It is a type defined as a structure with three arrays. The size and length of these arrays are age:int[4], gender:char[1], and size:int[2], all signed.
+- [ ] Yes, it causes a compiler error because the colon character is not allowed in struct definitions.
+- [x] and `child_t` is a type defined as a structure with bit fields. It has 4 bits for age and 1 bit for gender in the first byte, and 2 bits for size in the second byte.
+- [ ] Yes, it causes a compiler error because there is an unnamed field.
+- [ ] Yes, it causes a compiler error because one field is defined as having a size of 0.
 
 [Reference](https://en.cppreference.com/w/cpp/language/bit_field)
 
@@ -1129,32 +1136,25 @@ Note: This one is similar to Q6, but focuses on the `const` keyword.
 #### Q66. What would be the correct declaration of a default constructor for a class named Sprite?
 
 - [x]
-
-```cpp
-public:
-    Sprite();
-```
-
+  ```cpp
+  public:
+    		Sprite();
+  ```
 - [ ]
-
-```cpp
-private:
-    void Sprite();
-```
-
+  ```cpp
+  private:
+    		void Sprite();
+  ```
 - [ ]
-
-```cpp
-public:
-    void Sprite();
-```
-
+  ```cpp
+  public:
+    		void Sprite();
+  ```
 - [ ]
-
-```cpp
-private:
-    Sprite();
-```
+  ```cpp
+     private:
+    		Sprite();
+  ```
 
 #### Q67. What is the purpose of this line in a header file?
 
@@ -1189,16 +1189,134 @@ bool is_even(int);
 - [ ] bool is_even_float(float f); bool is_even_str(char \*str);
 - [ ] float is_even(float f); char *is_even(char *str);
 
-#### Q70. what is class template ?
-
-- [x] It is a class written with the generic programming paradigm, specifying behavior in terms of type parameters rather than specific types.
-- [ ] It is a class that consists only of member variables, with no constructor, destructor, or member functions.
-- [ ] It is a blank superclass intended for inheritance and polymorphism.
-- [ ] It is a skeleton source code for a class where the programmer has to fill in specific parts to define the data types and algorithms used.
-
-#### Q71. Other than shifting bits to the left, what is the << oprator used for ?
+#### Q70. Other than shifting bits to the left, what is the << oprator used for ?
 
 - [ ] shifting characters to the left in a string.
 - [x] inserting characters into an output stream like std::cout.
 - [ ] comparing floating point numbers as less-than.
 - [ ] assigning a variable to a reference.
+
+#### Q71. Does this code cause a compiler error? If so, why, and if not, what is `child_t`?
+
+```cpp
+typedef struct{
+    unsigned int  age    : 4;
+    unsigned char gender : 1;
+    char                 : 0;
+    unsigned int  size   : 2;
+}child_t;
+```
+
+- [ ] Yes, it causes a compiler error because the colon character is not allowed in struct definitions.
+- [x] and `child_t` is a type defined as a structure with bit fields. It has 4 bits for age and 1 bit for gender in the first byte, and 2 bits for size in the second byte.
+- [ ] Yes, it causes a compiler error because there is an unnamed field.
+- [ ] Yes, it causes a compiler error because one field is defined as having a size of 0.
+
+[Reference](https://en.cppreference.com/w/cpp/language/bit_field)
+
+#### Q72. Which choice is a reason to specify the type of a pointer instead of using `void *`, which works as a pointer ro any type?
+
+- [ ] The compiler needs the dara type to make sure that the pointer is not going to be used on illegal non-pointable types such as functions, labels, pointers, and reference.
+- [ ] `void *` does not work for any type. The language does not allow assigning anything other than `void` to a pointer to `void *`.
+- [x] The compiler needs the data type to know how much memory to allocate for the pointer, because different data types require different pointer lengths.
+- [ ] Yes, it causes a compiler error because one field is defined as having a size of 0.
+
+[Reference](https://stackoverflow.com/questions/9802585/why-is-the-data-type-needed-in-pointer-declarations)
+
+#### Q73. What is wrong with this piece of code?
+
+```cpp
+#include <iostream>
+char str[20]'
+int main(){
+    std::cout << "What's your name? ";
+    str << std::cin
+    std::cout << "Hello, " << str;
+    return 0;
+}
+```
+
+- [ ] The main function is supposed to have a void return type.
+- [ ] `std::cin` and `std::cout` are invalid. The correct names for the character input and output streams are `cin` and `cout`.
+- [ ] The address of `str` is supposed to be used. That is `&str` instead of `str`.
+- [x] The input operator flow is inverted. it should start from `std::cin` and then flow (>>) into `str`.
+
+#### Q74. What is this expression equivalent to?
+
+```cpp
+A->B
+```
+
+- [ ] `*(A.B)`
+- [ ] `B=A`
+- [x] `(*A).B`
+- [ ] `&A.B`
+
+#### Q75. Which statement is true when declaring the member variable `count` as static?
+
+```cpp
+class my_class{
+    public: static int count;
+};
+```
+
+- [ ] All objects that try to access their count member variable actually refer to the only class-bound static count variable.
+- [ ] The variable is allocated only once, regardless of how many objects are instantiated, because it is bound to the class itself, not its instances.
+- [ ] The variable existd when no objects of the class have been defined, so it can be modified at any point in the source code.
+- [x] The variable cannot be modified by any part of the code in the same application or thread. However, other threads may modify it.
+
+#### Q76. When placed in a valid execution context, which statement will dynamically allocate memory from the heap for an integer of value 11?
+
+- [ ] `int anInt = new int(11);`
+- [ ] `int* anInt = new int[11];`
+- [ ] `int anInt = new int[11];`
+- [x] `int* anInt = new int(11);`
+
+#### Q77. Which choice best describes the type `long`?
+
+- [x] an integer number of at least 32 bits
+- [ ] a string with more than 255 characters
+- [ ] a pointer
+- [ ] a 64-bit floating point number
+
+#### Q78. Which of the following types has the closest functionality to a class?
+
+- [x] `struct`
+- [ ] `union`
+- [ ] `enum`
+- [ ] `namespace`
+
+[Reference](https://en.cppreference.com/w/c/language/struct)
+
+#### Q79. Given these records in a map, how will you update the value for the key "Sinead" to 22?
+
+![image](images/Q79.png)
+
+- [x] `marks["Sinead"] = 22`
+- [ ] `marks["Sinead"].22`
+- [ ] `marks["Sinead"] -> 22`
+- [ ] `marks["Sinead"].value = 22`
+
+#### Q80. Why can the std::sort receive a function object as one of its parameters?
+
+- [ ] `The std::sort function is a template. The programmer is free to enter the sorting algorithm in a function object as an argument.`
+- [ ] `Actually, std::sort takes only one argument, which is the container to be sorted.`
+- [ ] `std::sort operates on a template container. The compiler does not know how to relationally compare the values it contains, so a function must be provided to do the comparison.`
+- [ ] `std::sort will use the parameter function as an error handler. The function will be called if an error occurs.`
+
+#### Q81. What will happen when you execute this code snippet?
+
+```
+#include <iostream>
+
+int main() {
+float a = 5.51;
+int b = static_cast<int>(a);
+std::cout << b;
+}
+```
+
+- [ ] `6 will be printed on standard output, with no compilation warnings generated.`
+- [x] `5 will be printed on standard output, with no compilation warnings generated.`
+- [ ] `6 will be printed on standard output, with compilation warnings generated.`
+- [ ] `5 will be printed on standard output, with compilation warnings generated.`

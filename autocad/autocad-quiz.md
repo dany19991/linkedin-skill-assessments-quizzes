@@ -347,8 +347,6 @@
 - [ ] to stop anyone seeing which AutoCAD palettes you are using
 - [x] to automatically hide the palette content and display only the docked palette title bar
 
-[Source: LinkedIn practice mode](https://i.imgur.com/XRuI0hW.gif)
-
 #### Q46. The navigation bar is normally on by default and is located to the right-hand side of the drawing area. Which variable controls the display of the navigation bar, and to what value does it need to be set for the navigation bar to display on the screen?
 
 - [ ] The NAVBARDISPLAY value should be set to 1
@@ -561,8 +559,6 @@
 - [ ] line polygon
 - [x] edge polygon
 
-[Source: LinkedIn practice mode](https://i.imgur.com/MJJiIHs.png)
-
 #### Q76. When using blocks in a drawing, a selected block displays only one grip: the insertion point. How would you get a block to display all of its associated grips?
 
 ![q76](images/q76_autocad.png)
@@ -571,3 +567,17 @@
 - [ ] Select the block and change it in the Properties palette.
 - [ ] Change the GRIPBLOCK system variable to 0.
 - [ ] Select the block and change it in the right-click shortcut menu.
+
+#### Q77. You create a layer to show an object's hidden lines, which should be dashed. Which layer property controls if the lines are continuous or dashed?
+
+- [ ] Linesize
+- [ ] Linestyle
+- [ ] Lineweight
+- [ ] Linetype
+
+#### Q74. You selected multiple items and four of the items where not supposed to be selected. How do you deselect them?
+
+- [ ] Hold down Alt (Windows) or Option (Mac) and select the four items.
+- [ ] Hold down CTRL (Windows) or Command (Mac) and select the four items.
+- [ ] Simply select them.
+- [ ] Hold down Shift and select the four items.

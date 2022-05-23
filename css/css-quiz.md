@@ -16,10 +16,10 @@ div a
 
 #### Q2. Using an attribute selector, how would you select an `<a>` element with a "title" attribute?
 
-- [x] a[title]{...}
-- [ ] a > title {...}
-- [ ] a.title {...}
-- [ ] a=title {...}
+- [x] `a[title]{...}`
+- [ ] `a > title {...}`
+- [ ] `a.title {...}`
+- [ ] `a=title {...}`
 
 #### Q3. CSS grid and flexbox are now becoming a more popular way to create page layouts. However, floats are still commonly used, especially when working with an older code base, or if you need to support older browser version. What are two valid techniques used to clear floats?
 
@@ -49,8 +49,7 @@ div a
   3. An element with a class of "nav"
   ```
 - [ ]
-
-- ```markdown
+  ```markdown
       They all target the same nav element.
   ```
 - [x]
@@ -228,7 +227,7 @@ section + p {
 - [x] Paragraphs one will be red, paragraph two will be blue.
 - [ ] Both paragraphs will be red.
 
-#### Q16.What are three valid ways of adding CSS to an HTML page?
+#### Q16. What are three valid ways of adding CSS to an HTML page?
 
 - [ ]
   ```markdown
@@ -350,12 +349,12 @@ p {
 - [ ] The rem unit is relative to the font-size of the containing (parent) element.
 - [x] The rem unit is relative to the font-size of the root element of the page.
 
-#### Q26.Which of these would give a block element rounded corners?
+#### Q26. Which choice would give a block element rounded corners?
 
-- [ ] corner-curve: 10px
-- [ ] border-corner: 10px
-- [x] border-radius: 10px
-- [ ] corner-radius: 10px
+- [ ] `corner-radius: 10px;`
+- [ ] `border-corner: 10px;`
+- [ ] `corner-curve: 10px;`
+- [x] `border-radius: 10px;`
 
 [Official doc:](https://www.w3schools.com/css/css3_borders.asp)
 
@@ -396,6 +395,8 @@ p {
 - [ ] 64px
 - [ ] 4rem
 
+[Reference MDN Webdocs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
+
 #### Q31. When using the Flexbox method, what property and value is used to display flex items in a column?
 
 - [x] flex-flow: column; or flex-direction: column
@@ -411,6 +412,8 @@ p {
 - [ ] important declarations in author stylesheets
 
 #### Q33. The flex-direction property is used to specify the direction that flex items are displayed. What are the values used to specify the direction of the items in the following examples?
+
+![quote](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-1.png)
 
 - [x]
   - Example 1: `flex-direction: row;`
@@ -460,6 +463,8 @@ h2 + p {
 - [ ] Paragraph 2 will be blue. Paragraphs 2 and 3 will have a beige background.
 
 #### Q35. When using flexbox, the "justify-content" property can be used to distribute the space between the flex items along the main axis. Which value should be used to evenly distribute the flex items within the container shown below?
+
+![quote](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-2.png)
 
 - [x] justify-content: space-around;
 - [ ] justify-content: center;
@@ -550,8 +555,8 @@ Note: an alternative for Q7.
 
 - [ ] `a[href="#"] {...}`
 - [ ] `a[href~="#"]`
-- [ ] `a[href^="#"]`
-- [x] `a[href="#"]`
+- [x] `a[href^="#"]`
+- [ ] `a[href="#"]`
 
 #### Q44. What is not true about class selectors?
 
@@ -569,10 +574,10 @@ Note: an alternative for Q7.
 
 #### Q46. What is not a valid way of declaring a padding value of 10 pixels on the top and bottom, and 0 pixels on the left and right?
 
-- [ ] padding: 10px 10px 0px 0px;
+- [x] padding: 10px 10px 0px 0px;
 - [ ] padding: 10px 0px;
 - [ ] padding: 10px 0;
-- [x] padding: 10px 0px 10px 0px;
+- [ ] padding: 10px 0px 10px 0px;
 
 #### Q47. Is there an error in this code? If so, find the best description of the problem
 
@@ -746,7 +751,7 @@ Note: an alternative for Q13.
 - [ ] It can be used to quickly test local CSS overrides.
 - [ ] It reduces conflict with other CSS definition methods.
 
-#### Q63.Which W3C status code represents a CSS specification that is fully implemented by modern browsers?
+#### Q63. Which W3C status code represents a CSS specification that is fully implemented by modern browsers?
 
 - [ ] Proposed Recommendation
 - [ ] Working Draft
@@ -1082,24 +1087,22 @@ D. border-top-radius: 10px;
 - [ ] `input[type*="text"]:not([disabled="disabled"]) {...}`
 - [ ] `input[type="text"]:not([type="disabled"]) {...}`
 
-**Explanation:**
-
 `input[type="text"]` selects all the input with type text, and `:not([disabled])` selects all the elements not having the attribute "disabled". Combining both only selects all the input elements with type attribte as "text" and not having "disabled" attribute.`
 
-- [Reference link attribute-selector](https://www.w3schools.com/css/css_attribute_selectors.asp)
-- [Reference link-:not()](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)
+[Reference link attribute-selector](https://www.w3schools.com/css/css_attribute_selectors.asp)
+
+[Reference link-:not()](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)
 
 #### Q88. How can you create a semi-transparent background color?
 
-- [ ] background-color: hsl(0, 0, 0, 0.5);
-- [ ] background-color: rgbx(0, 0, 0, 0.5);
-- [x] background-color: rgba(0, 0, 0, 0.5);
-- [ ] background-color: rgba(0, 0, 0, 1);
+- [ ] `background-color: hsl(0, 0, 0, 0.5);`
+- [ ] `background-color: rgbx(0, 0, 0, 0.5);`
+- [x] `background-color: rgba(0, 0, 0, 0.5);`
+- [ ] `background-color: rgba(0, 0, 0, 1);`
 
-**Explanation:**
 `rgba` is a funtion in css. rgba stands for red, green, blue and alpha. The value of alpha can be between 0 and 1 both inclusive with 0 being fully transparent and 1 being fully opaque.
 
-- [Reference link-rgba](https://www.w3schools.com/cssref/func_rgba.asp)
+[Reference link-rgba](https://www.w3schools.com/cssref/func_rgba.asp)
 
 #### Q89. Using this HTML markup, how would you select only the headings contained within the `<header>` element?
 
@@ -1270,7 +1273,7 @@ section {
 - [ ] `section ~ p`
 - [x] `section > p`
 
-Reference: [Child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator)
+[Child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator)
 
 #### Q99. For this code, what is the font color of the hypertext link?
 
@@ -1301,7 +1304,7 @@ a {
 - [ ] blue
 - [ ] black
 
-  [Reference](https://www.sitepoint.com/pseudo-classes-the-basics/)
+[Reference](https://www.sitepoint.com/pseudo-classes-the-basics/)
 
 #### Q100. Which statement is not true?
 
@@ -1310,4 +1313,538 @@ a {
 - [ ] The last rule defined overrides all previous rules and even conflicting rules.
 - [ ] Rules with more specific selectors have greater specificity.
 
-  [Reference](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
+[Reference](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
+
+#### Q101. What is the output of the margin value when used within this context, assuming that its containing element is larger than 800px?
+
+```css
+.example {
+  width: 800px;
+  margin: 0 auto;
+}
+```
+
+- [ ] The example element will have 0 margin space around the whole element. The auto value will center align the element horizontally and vertically within its container.
+
+- [ ] The example element will have 0 margin space on the left and right. It will be sized automatically on the top and bottom, which will center align the element within its container.
+
+- [x] The example element will have 0 margin space on the top and bottom. The margin will be sized automatically on the left and right, which may center align the element within its container.
+
+- [ ] The margin value is invalid because its missing a unit measurement after the 0.
+
+[Source: SOW](https://stackoverflow.com/questions/3170772/what-does-auto-do-in-margin-0-auto)
+
+#### Q102. There are currently four viewport-percentage lengths that can be used to define the value relative to the viewport size: vw, vh, vmin, and vmax. If the current viewport size has a width of 800px and a height of 600px, what will these values be equivalent to in pixels?
+
+```css
+10vw = ?px
+10vh = ?px
+10vmin = ?px
+10vmax = ?px
+```
+
+- [x] 10vw = 80px
+      10vh = 60px
+      10vmin = 60px
+      10vmax = 80px
+
+- [ ] 10vw = 60px
+      10vh = 80px
+      10vmin = 80px
+      10vmax = 60px
+
+- [ ] 10vw = 8px
+      10vh = 6px
+      10vmin = 6px
+      10vmax = 8px
+
+- [ ] 10vw = 6px
+      10vh = 8px
+      10vmin = 8px
+      10vmax = 6px
+
+#### Q103. Which element(s) will be blue?
+
+```css
+h2 ~ p {
+  color: blue;
+}
+```
+
+```html
+<section>
+  <p>P1</p>
+  <h2>H2</h2>
+  <p>P3</p>
+  <p>P4</p>
+</section>
+```
+
+- [ ] P3P3
+- [ ] P1P1
+- [ ] P1, P3, and P4P1, P3, and P4
+- [x] P3 and P4
+
+#### Q104. Referring to the HTML markup and CSS example below, which element(s) will be targeted?
+
+```css
+p:first-of-type:first-letter {
+  color: red;
+}
+```
+
+```html
+<body>
+  <p>Paragraph 1.</p>
+  <p>Paragraph 2.</p>
+
+  <article>
+    <h1>Heading</h1>
+    <p>Paragraph 3.</p>
+    <p>paragraph 4.</p>
+  </article>
+
+  <section>
+    <p>Paragraph 5.</p>
+    <p>Paragraph 6.</p>
+  </section>
+</body>
+```
+
+- [ ] The first letter in all paragraphs will be red.
+- [ ] Only the first letter in paragraphs 1 and 5 will be red.
+- [x] The first letter in paragraphs 1, 3, and 5 will be red.
+- [ ] Only the first letter in paragraph 1 will be red.Only
+
+#### Q105. Which five style features are associated with the box model?
+
+- [x] margin, padding, border, width, height
+- [ ] width, height, z-index, overflow, font size
+- [ ] margin, padding, font size, line height, border
+- [ ] font size, line height, letter spacing, width, height
+
+#### Q106. Which choice will not set all links that include domain.com to pink?
+
+```css
+[] a[href$='domain.com'] {
+  color: pink;
+}
+
+[x] a[href='*domain.com'] {
+  color: pink;
+}
+
+[] a[href*='domain.com'] {
+  color: rgb(255, 155, 155);
+}
+
+[] a[href*='domain.com'] {
+  color: pink;
+}
+```
+
+[Reference](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
+
+#### Q107. Which property and value pair could be used to apply a linear gradient effect?
+
+```css
+[x] `background: linear-gradient(#648880, #293f50);`
+[ ] `background-image: linear(#648880, #293f50);`
+[ ] `background: gradient(linear, #648880, #293f50);`
+[ ] `background-color: linear-gradient(#648880, #293f50);`
+```
+
+#### Q108. You want to add a background circle behind an icon. Which style declaration is correct?
+
+```css
+[] .glyphicon-bgcircle {
+  circle-radius: 50%;
+  margins: 50px;
+  background-color: #fdadc6;
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+}
+
+[] glyphicon-bgcircle {
+  border-circle: 50%;
+  padding: 50px;
+  background-color: #fdadc6;
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+}
+
+[x] .glyphicon-bgcircle {
+  border-radius: 50%;
+  padding: 50px;
+  background-color: #fdadc6;
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+}
+
+[] .glyphicon-bgcircle {
+  radius-rounded: 50%;
+  margins: auto;
+  background-color: #fdadc6;
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+}
+```
+
+#### Q109. When using a font stack to declare the font family, in what order should the values appear?
+
+- [x] The first value is the first choice, followed by alternative options, ordered by preference. The last option should be a generic font.
+- [ ] The first value is the first choice. The order of the alternative options does not matter. It depends on what is available on the user's computer.
+- [ ] The first value is the first choice, and must be followed by at least one alternative option before adding the generic font.
+- [ ] The first value is the first choice, followed by a maximum of three alternatives.
+
+#### Q110. Which items are valid values for the font-size property?
+
+```css
+A. font-size: xsmall
+B. font-size: 50%
+C. font-size: 1em
+D. font-size: 20px
+```
+
+- [ ] C, D
+- [x] B, C, D
+- [ ] A, C
+- [ ] A, B, C, D
+
+#### Q111. In this image, the blue box and sample text are both contained within the same parent element. The blue box is floated on the left margin of the container. Why is it not contained with the container?
+
+![Sample text](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-3.png)
+
+- [ ] Floating the blue box increased its height.
+- [ ] Floating the blue box on the left also moves it down.
+- [ ] Floating the blue box actually shifts it to the right and down.
+- [x] Floating the blue box took it out of document flow and the container is sized only to the sample text.
+
+#### Q112. Given this code, which CSS declaration of .overlay will span the entire width and height of its container?
+
+```css
+<style>
+.container {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+}
+</style>
+<div class="container"><div class="overlay"></div></div>
+```
+
+- [ ]
+
+```css
+.overlay {
+  position: static;
+  top: 200px;
+  bottom: 200px;
+  right: 200px;
+  left: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+```
+
+- [ ]
+
+```css
+.overlay {
+  position: absolute;
+  top: 200px;
+  bottom: 200px;
+  right: 200px;
+  left: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+```
+
+- [ ]
+
+```css
+.overlay {
+  position: static;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+```
+
+- [x]
+
+```css
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+```
+
+#### Q113. Which missing line of code would place the text on top of the image?
+
+```js
+<div class="container">
+  <img src="grumpy-cat.gif" />
+  <p>The z-index property is cool!</p>
+</div>
+```
+
+```css
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  // Missing line
+}
+```
+
+- [ ] `z-index: 1;`
+- [x] `z-index: -1;`
+- [ ] `z-index: 0;`
+- [ ] `z-index: true;`
+
+#### Q114. To make the font size of an element one size smaller than the font size of the element's container, which style property would you apply?
+
+- [ ] `font-size: reduce;`
+- [ ] `font-size: 8px;`
+- [ ] `font-size: -1em;`
+- [x] `font-size: smaller;`
+
+#### Q115. Given this markup, which selector would result in the text being highlighted in yellow?
+
+```js
+<span class="highlight">#BLM</span>
+```
+
+- [ ]
+
+```css
+.highlight {
+  background-color: yellow;
+}
+```
+
+- [ ]
+
+```css
+#highlight {
+  background-color: yellow;
+}
+```
+
+- [x]
+
+```css
+.highlight {
+  color: yellow;
+}
+```
+
+- [ ]
+
+```css
+#highlight {
+  color: yellow;
+}
+```
+
+#### Q116. To prevent a background image from tiling in any direction, which style property would you apply?
+
+- [X]
+
+```css
+background-repeat: no-repeat;
+```
+
+- [ ]
+
+```css
+background-repeat: fixed;
+```
+
+- [ ]
+
+```css
+background-repeat: none;
+```
+
+- [ ]
+
+```css
+background-tile: none;
+```
+
+#### Q117. To rotate an object 30 degrees counterclockwise, which style property would you apply?
+
+- [x] `transform: rotate(-30deg);`
+- [ ] `transform: rotate(30deg);`
+- [ ] `rotate: 30deg;`
+- [ ] `spin: 30deg;`
+
+[Reference](<https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate()>)
+
+#### Q118. Which style rule would you apply to set the background image to display the contents of the wood.png file?
+
+- [ ] `background-image: file('wood.png');`
+- [x] `background-image: url('wood.png');`
+- [ ] `background-image: wood.png;`
+- [ ] `image: wood.png`
+
+#### Q119. What style rule would set the font color of only paragraph two to blue?
+
+```js
+<section><p>paragraph one</p></section><p>paragraph two</p>
+```
+
+- [ ]
+
+```css
+section > p {
+  color: blue;
+}
+```
+
+- [ ]
+
+```css
+p {
+  color: blue;
+}
+```
+
+- [x]
+
+```css
+section + p {
+  color: blue;
+}
+```
+
+- [ ]
+
+```css
+p + section {
+  color: blue;
+}
+```
+
+[Reference](https://www.w3schools.com/cssref/sel_element_pluss.asp)
+
+#### Q120. You want to move an element up 100px. Which CSS property would you use?
+
+- [ ] `transform: translateX(-100px)`
+- [x] `transform: translateY(-100px)`
+- [ ] `transform: translateY(100px)`
+- [ ] `transform: translateX(100px)`
+
+#### Q121. Which style will horizontally center the inner &lt;div&gt; within the outer &lt;div&gt;?
+
+```js
+<div id="outer">
+  <div id="inner">Center Me!</div>
+</div>
+```
+
+- [ ]
+
+```css
+#inner {
+  width: 50%;
+}
+
+#outer {
+  width: 100%;
+}
+```
+
+- [ ]
+
+```css
+#inner {
+  left: 0;
+  right: 0;
+  position: center;
+}
+```
+
+- [ ]
+
+```css
+#inner {
+  text-align: center;
+}
+```
+
+- [x]
+
+```css
+#inner {
+  width: 50%;
+  margin: 0 auto;
+}
+```
+
+#### Q122. Which corner will the puppy be in when these CSS rules are applied?
+
+```css
+.pen {
+  height: 100px;
+  width: 100px;
+  border: 2px dashed brown;
+  position: relative;
+}
+
+#puppy {
+  position: absolute;
+  right: 80px;
+  bottom: 0px;
+}
+```
+
+```html
+<div class="pen">
+  <span id="puppy">🐶</span>
+</div>
+```
+
+- [ ] top-right corner
+- [ ] bottom-right corner
+- [ ] top-left corner
+- [x] bottom-left corner
+
+#### Q123. Which choice uses the correct syntax for adding a hover pseudo class to <a> element ?
+
+- [x] `a:hover {...}`
+- [ ] `a :hover {...}`
+- [ ] `a.hover {...}`
+- [ ] `a hover {...}`
+
+[Reference](https://stackoverflow.com/questions/1935820/set-ahover-based-on-class)
+
+#### Q124. Which missing code will give "Cellar Door" a shadow?
+
+```css
+  <style>
+    #cellar-door {
+      box-shadow: 3px 5px 10px #000;
+    }
+    .text-shadow {
+      text-shadow: 3px 5px 10px #000;
+    }
+  </style>
+
+  <h1 _____> Cellar Door</h1>
+```
+
+- [x] `class="text-shadow"`
+- [ ] `id="cellar-door"`
+- [ ] `id="text-shadow"`
+- [ ] `class="cellar-door"`
+
+[Reference](https://www.w3schools.com/html/html_classes.asp)

@@ -283,7 +283,7 @@ mvn install
 - [ ] Maven will include only the App class when it compiles the source code.
 - [ ] Maven will add an empty main method to the App class.
 
-#### Q38. Suppose you are packaging a Maven project and see the following error "[WARNING] Using platform encoding (CP1252 actually) to copy filtered resources, i.e. build platform dependent!" What do you add to your POM file to set platform encoding to ensure your build is not platform dependet ?
+#### Q38. Suppose you are packaging a Maven project and see the following error: “[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!” What do you add to your POM file to set the platform encoding to ensure your build is not platform dependent?
 
 - [ ] <project.build.resources>
 - [ ] <maven.compiler.source>
@@ -292,10 +292,12 @@ mvn install
 
 #### Q39. Why might you not want to include groupId and version elements in child POM files?
 
-- [x] all of these answers
-- [ ] dependencies
-- [ ] version
-- [ ] groupId
+- [ ] If you include these elements, an error will be thrown when you try to build the project.
+- [x] These elements are inherited from the parent POM file, and do not need to be repeated.
+- [ ] Child POM files should include definitions of only dependencies and plugins.
+- [ ] The values in the parent POM will be overridden by what is defined in the child POM.
+
+[maven docs](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html#the-solution)
 
 #### Q40. The settings.xml file that provides the user-specific settings for Maven is contained in which directory by default?
 
@@ -340,3 +342,111 @@ mvn install
 - [x] Compile
 - [ ] Runtime
 - [ ] Build
+
+#### Q46. How many times is compiler:compile called when executing mvn clean compile test package?
+
+- [ ] one
+- [ ] two
+- [ ] none
+- [ ] three
+
+#### Q47. What is one of the advantages of using properties in Maven?
+
+- [ ] Properties provide a template for you to build Maven projects with a certain structure.
+- [ ] Properties allow you to inherit values from the parent POM in the child POM.
+- [x] You can avoid hard-coding values in multiple places.
+- [ ] Properties speed up your Maven build.
+
+#### Q48. What are the phases of the clean lifecycle?
+
+- [x] pre-clean,clean and post-clean
+- [ ] Compile, clean and install
+- [ ] clean and install
+- [ ] validate, clean and deploy
+
+#### Q49. A compile-time dependency of a dependency for your project is often called **a\_** dependency.
+
+- [ ] Transitive
+- [ ] runtime
+- [ ] provided
+- [ ] test
+
+#### Q50. For what purpose can plugins use the validate phase in the default lifecycle?
+
+- [ ] to check the parent POM file defines all of the child POM files
+- [x] to carry out checks before building the project
+- [ ] to ensure plugins defined in the POM file are in the correct order
+- [ ] to check the project structure is correct after building a project
+
+1. [stackoverflow](https://stackoverflow.com/a/40601037)
+2. [maven docs](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#a-build-lifecycle-is-made-up-of-phases)
+
+#### Q51. How do you check for unused dependencies in your project?
+
+- [ ] Run mvn clean and look at which plugins are not mentioned in the output.
+- [ ] You will need to do this manually.
+- [ ] Include the Maven dependency plugin in your POM file and run the unpack goal.
+- [x] Run the analyze goal of the dependency plugin.
+
+1. [baeldung](https://www.baeldung.com/maven-unused-dependencies)
+2. [stackoverflow](https://stackoverflow.com/a/1518661)
+
+#### Q52. Why is it best practice to avoid overriding the default directory structure?
+
+- [ ] Keeping the default structure reduces onboarding time, because developers recognize it.
+- [ ] Overriding the default structure is very complex.
+- [ ] Overriding the default structure will cause Maven to take longer to compile your code.
+- [x] all of these answers
+
+[maven docs](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html)
+
+#### Q53. What is the main purpose of the install phase?
+
+- [ ] to compile the source code of the project
+- [x] to install all of the remote dependencies
+- [ ] to deploy the final project artifacts into a remote Maven repository
+- [ ] to copy the final project artifacts into the local Maven repository
+
+[maven docs](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#a-build-lifecycle-is-made-up-of-phases)
+
+#### Q54. How do you skip the tests when running a mvn package command?
+
+- [ ] Use -Dtest=skip
+- [x] Use -DskipTests=true
+- [ ] Use -Dtests=pass
+- [ ] Use a plugin that can be configured to skip tests
+
+#### Q55. Below is a section of a settings.xml file. How can you use the path to the app home in your POM file?
+
+```
+<profiles>
+    <profile>
+        <id>set=app-home</id>
+        <properties>maven-people-plugin</artifactId>
+            <application-home>/path/to/application</application-home>
+        </properties>
+    </profile>
+</profiles>
+<activeProfiles>
+    <activeProfile>set-app-home</activeProfile>
+</activeProfiles>
+```
+
+- [ ] ${activeProfile}
+- [x] ${application-home}
+- [ ] ${set-app-home}
+- [ ] ${/path/to/application}
+
+#### Q56. What is the default value of the warSourceDirectory configuration property of the Maven WAR Plugin?
+
+- [ ] /src/main/webapp
+- [ ] /src/main/war
+- [x] /src/main/WEB-INF
+- [ ] /src/web
+
+#### Q57. When building a Maven Archetype, where do you put your prototype files?
+
+- [ ] src/main/template
+- [ ] src/main/archetype
+- [x] src/main/resources/archetype-resources
+- [ ] src/main/java

@@ -14,14 +14,14 @@
 - [ ] the color of each house in a small neighborhood
 - [x] the weather conditions for each house in a small neighborhood
 
-#### Q3.1 Why would you create an abstract class, if it can have no real instances?
+#### Q3. 1 Why would you create an abstract class, if it can have no real instances?
 
 - [x] to avoid redundant coding in children
 - [ ] to explore a hypothetical class
 - [ ] to prevent unwanted method implementation
 - [ ] to reserve memory for an unspecified class type
 
-#### Q3.2 Why would you create an abstract class, if it can have no real instances?
+#### Q3. 2 Why would you create an abstract class, if it can have no real instances?
 
 - [x] to have common behavior in derived classes
 - [ ] to explore a hypothetical class
@@ -65,8 +65,8 @@
 
 #### Q9. Which code creates a new object from the Employee class?
 
-- [ ] Employee current Employee = Employee.Create();
-- [x] Employee current Employee = new Employee();
+- [ ] Employee currentEmployee = Employee.Create();
+- [x] Employee currentEmployee = new Employee();
 - [ ] Employee currentEmployee;
 - [ ] Employee currentEmployee = Employee.New();
 
@@ -77,14 +77,14 @@
 - [ ] parameterized
 - [x] Constructors do not have a return type
 
-#### Q11.1 When is a constructor executed?
+#### Q11. 1 When is a constructor executed?
 
 - [x] when an object is created from a class using the new keyword
 - [ ] when an class is defined using the class keyword
 - [ ] every time an object is referenced
 - [ ] when an object is created from a class using the create keyword
 
-#### Q11.2 When is a constructor executed?
+#### Q11. 2 When is a constructor executed?
 
 - [x] when an object is created from a class
 - [ ] when an class is defined using the class keyword
@@ -119,7 +119,7 @@
 - [ ] Inheritance forces a class to have a single responsibility from only one parent.
 - [ ] Inheritance means that you will never have multiple classes that can be used interchangeably, even though each class implements the same properties or methods in different ways.
 
-#### Q16 Which type of inheritance ,when done continuously, is similar to a tree structure?
+#### Q16. Which type of inheritance ,when done continuously, is similar to a tree structure?
 
 - [ ] multilevel
 - [ ] hierarchical and multiple
@@ -170,11 +170,11 @@ _NOTE_: Hybrid inheritance is a composition of multiple and hierarchical inherit
 - [ ] a procedure-oriented language
 - [ ] if classes are supported, polymorphism will be supported
 
-#### Q23. If two classes combine some private data members and provides public member functions to access and manipulate those data members. Where is abstraction used?
+#### Q23. Two classes combine private data members and provide public member functions to access and manipulate those data members. Where is abstraction used?
 
-- [ ] Abstraction is using a private access specifier for data members
-- [x] Abstraction is using public member functions to access and manipulate the data members
-- [ ] Abstraction is using the class concept with both data members and member functions
+- [ ] Abstraction is using a private access specifier for the data members.
+- [x] Abstraction is using public member functions to access and manipulate the data members.
+- [ ] Abstraction is using the class concept with both data members and member functions.
 - [ ] There is insufficient information to decide where abstraction is being used.
 
 #### Q24. What are the five Creational Design patterns by the Gang of Four ?
@@ -253,7 +253,7 @@ _NOTE_: Hybrid inheritance is a composition of multiple and hierarchical inherit
 - [x] method overloading, because it allows the creation of several methods with the same name, wich differ by the type of input via parameter
 - [ ] method overriding, because it display the same method name, different parameters, and same return type
 
-#### Q34. What is the purpose os static constructor?
+#### Q34. What is the purpose of static constructor?
 
 - [x] to initialize all the members with static value
 - [ ] to delete the static members when not required
@@ -263,20 +263,20 @@ _NOTE_: Hybrid inheritance is a composition of multiple and hierarchical inherit
 #### Q35. What are CRC Cards?
 
 - [ ] Code Responsibility Collection cards are a brainstorming tool used in the design of procedural software
-- [x] Class responsible collaboration cards are a brainstorming tool used in the design of oop software
+- [x] Class Responsibility collaboration cards are a brainstorming tool used in the design of oop software
 - [ ] Code Responsibility Correction cards are tools used for debugging
 - [ ] Code Responsibility Correction cards are tools for modeling
 
 [reference link](https://en.wikipedia.org/wiki/Class-responsibility-collaboration_card)
 
-#### Q36.1 How are contents of a composition different from those of aggregation?
+#### Q36. 1 How are contents of a composition different from those of aggregation?
 
 - [ ] if one element of an aggregation is dereferenced, all its elements are eligible for garbage collection
 - [x] if a composition dies, the contents die
 - [ ] the contents of a composition are all siblings
 - [ ] an aggregation contains only abstract classes
 
-#### Q36.2 Which statement about compositions and aggregations is true?
+#### Q36. 2 Which statement about compositions and aggregations is true?
 
 - [ ] if one element of an aggregation is dereferenced, all its elements are eligible for garbage collection
 - [x] if a composition dies, the contents die
@@ -461,12 +461,7 @@ _NOTE_: I don't have 4th variant in my test, it changed to new 5th variant. Is i
 - [x] No, changes will be automatically reflected in the calling function.
 - [ ] Yes, the object must be the same in the caller function.
 
-#### Q62. Why is inheritance ?
-
-- [ ] Yes, the caller function needs to reflect the changes.
-- [ ] No, you should use a global variable instead.
-- [ ] No, changes will be automatically reflected in the calling function.
-- [ ] Yes, the object must be the same in the caller function.
+#### Q62. Why is inheritance?
 
 #### Q63. What is the best example of a superclass and subclass relationship?
 
@@ -475,11 +470,187 @@ _NOTE_: I don't have 4th variant in my test, it changed to new 5th variant. Is i
 - [ ] toes:feet
 - [ ] rock:stone
 
-[Source: LinkedIn assessment practice mode](https://i.imgur.com/xUCuxms.png)
-
 #### Q64. Which statements best describe the Gang of Four design patterns called Memento and Observer?
 
 - [ ] Memento notifies multiple classes of changes. Observer captures and restores an object's internal state.
 - [ ] Memento defers the exact steps of an algorithm to a subclass. Observer defines a new operation to a class without change.
 - [ ] Memento alters an object's behavior when its state changes. Observer encapsulates an algorithm inside a class.
-- [ ] Memento captures and restores an object's internal state. Observer notifies multiple classes of changes.
+- [x] Memento captures and restores an object's internal state. Observer notifies multiple classes of changes.
+
+#### Q65. What does the value (0.5,0.5,0.5) indicate in the class diagram specification position: Coordinate = (0.5,0.5,0.5)?
+
+- [ ] a default value of the Coordinate attribute
+- [ ] the size of the position array
+- [ ] an increment of the position attribute value
+- [x] a default value of the position attribute
+
+#### Q66. What is the most accurate example of the Liskov substitution principle?
+
+- [ ]
+
+```
+public class Car{
+}
+public class FlyingCars extends Car{
+   public void fly(){}
+}
+public class Tesla FlyingCar{}
+public class Honda Car{}
+```
+
+- [ ]
+
+```
+public class Car{
+   public void fly(){}
+}
+public class Tesla extends Car{}
+public class Honda extends Car{}
+```
+
+- [ ]
+
+```
+public class Car{
+public void fly(){}
+}
+public class Tesla Car{}
+public class Honda Car{}
+```
+
+- [x]
+
+```
+public class Car{
+}
+public class FlyingCars extends Car{
+   public void fly(){}
+}
+public class Tesla extends FlyingCar{}
+public class Honda extends Car{}
+```
+
+[reference link](https://stackoverflow.com/a/44913313/1573267)
+
+#### Q67. What is the difference between a parameter and an argument?
+
+- [ ] An argument can have many values while a parameter can have only one value.
+- [ ] An argument is the variable used for input values in a method. A parameter is the specific input value passed to the method.
+- [x] A parameter is a variable in the declaration of a function. An argument is the value of this variable that gets passed to the function.
+- [ ] Parameters and arguments are the same
+
+#### Q68. What is the scope of a class nested inside another class?
+
+- [ ] Protected scope
+- [ ] Private scope
+- [ ] Global scope
+- [x] Depends on access specifier and inheritance used
+
+> Explanation: It depends on the access specifier and the type of inheritance used with the class, because if the class is inherited then the nested class can be used by subclass too, provided it’s not of private type.
+
+#### Q69. Methods and attributes that define an object are a kind of blueprint called what?
+
+- [ ] a collection
+- [ ] a variable
+- [x] a class
+- [ ] a procedure
+
+#### Q70. Assume single inheritance is used with classes A and B while A is the base class. Then assume classes C, D, and E, where C is a base class and D is derived from C, then E is derived from D. Class C is made to inherit from class B. Which type of inheritance is reflected?
+
+- [x] Multilevel
+- [ ] Hybrid
+- [ ] Single level
+- [ ] Multiple
+
+#### Q71. What is the main idea behind separation of concerns?
+
+- [x] All of these answers
+- [ ] Applications are decomposed into parts
+- [ ] Parts are defined with minimal overlap
+- [ ] Each part is responsible for a separate concern
+
+#### Q72. What is the purpose of the finally block?
+
+- [x] To always run the finally block of code when the try block exits
+- [ ] To run code when an exception has not occurred
+- [ ] To run the block if an exception occurred
+- [ ] To run code whenever garbage collection requires it
+
+#### Q73. Which choice is not an OOP language?
+
+- [ ] C#
+- [ ] Java
+- [x] C
+- [ ] Python
+
+#### Q74. What is the function of a finalizer or destructor?
+
+- [x] To relinquish resources that are no longer needed
+- [ ] To delete a variable name
+- [ ] To reset an attribute value
+- [ ] To hold space, even after an object is no longer being used
+
+#### Q75. An instance of which type of class cannot be created?
+
+- [ ] Protected class
+- [ ] Base class
+- [ ] Anonymous class
+- [x] Abstract class
+
+#### Q76. In the context of OOP, what is composition?
+
+- [ ] Composition is the act of one object passing to another object an operation to be performed on behalf of the initial object.
+- [x] Composition is a part/hole relationship where an object is composed of one or more other objects, each of which is considered a part of the whole.
+- [ ] Composition is a binding where the class/name association is not made until the object designated by the name is created at execution time
+- [ ] Composition is a process of collecting classes that provide a set of services for a particular domain
+
+#### Q77. Static polymorphism uses method \_ ?
+
+- [x] overloading
+- [ ] inheritance
+- [ ] abstraction
+- [ ] overriding
+
+#### Q78. What does a concrete class not have?
+
+- [ ] parents
+- [x] pure virtual functions
+- [ ] attributes
+- [ ] purposes
+
+#### Q79. How does dynamic typing complicate troubleshooting?
+
+- [x] It can be difficult to identify variables that are incorrectly typed
+- [ ] The dynamic variables can assume only limited values
+- [ ] Storage is fixed for dynamic variables
+- [ ] Static variables are more flexible than dynamic variables
+
+#### Q80. What is the difference between early binding and late binding?
+
+- [ ] Early binding is when a variable is assigned a value when a scope is created. Late binding is when a variable is assigned a value after a scope is exited
+- [ ] Early binding is when a variable is assigned a value when the program starts. Late binding is when a variable is assigned after the program is running
+- [ ] There is no difference. In both cases, variables are assigned values when a program has completed startup and is running
+- [x] Early binding is when a variable is assigned its value at compile time. Late binding is when a variable is assigned a value at run time
+
+#### Q81. What is the difference between an interface and an abstract class?
+
+- [ ] Interfaces can contain code or data. Abstract classes do not contain code or data. A class can inherit from more than one abstract class but can only implement one interface
+- [ ] Interfaces can contain code or data. Abstract classes do not contain code or data. A class can inherit from only one abstract class but can implement an unlimited number of interface
+- [x] Abstract classes can contain code or data. Interface do not contain code or data. A class can inherit from only one abstract class but can implement an unlimited number of interfaces
+- [ ] Abstract classes can contain code or data. Interface do not contain code or data. A class can inherit from more than one abstract class but can only implement one interface
+
+#### Q82. What parameters are required to be passed to a class constructor?
+
+`Here they haven't mentioned any specific language so let's consider all languages.`
+
+- [ ] reference to subclass // References to subclass are never required as you can simply Initialize subclass & use their object.
+- [ ] reference to base class // References to the base class are not required in Java, Javascript & Python
+- [ ] reference to this pointer // While Python & Javascript may require passing this or self in the constructor, It is not passed in Java constructor.
+- [x] none // Above 3 are incorrect so "none" is the answer
+
+#### Q83. What are the four principles of object-oriented programming?
+
+- [ ] manipulation, encapsulation, inheritance, and dependency inversion
+- [ ] dependency inversion, open/closed principle, encapsulation, and inheritance
+- [ ] interface segregation, abstraction, dependency inversion, and inheritance
+- [x] abstraction, encapsulation, inheritance, and polymorphism

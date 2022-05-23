@@ -522,7 +522,7 @@ mysql < file.sql > out.txt
 - [ ] `bash for i in $ls; do ... done`
 - [ ] `bash for $ls; do ... done`
 
-#### Q45 When executing a command and passing the output of that command to another command, which character allows you to chain these commands together?
+#### Q45. When executing a command and passing the output of that command to another command, which character allows you to chain these commands together?
 
 - [x] |
 - [ ] ->
@@ -686,6 +686,8 @@ echo "${VAR//man/rolling}"
 
 #### Q57. What statement would you use to print this in the console?
 
+`Shall we play a game? yes\no`
+
 - [ ] `echo "Shall we play a game? yes/\no"`
 - [ ] `echo "Shall we play a game\? yes\\no"`
 - [x] `echo "Shall we play a game? yes\\no"`
@@ -704,8 +706,8 @@ textfile2.txt
 
 ----------
 
-<code>shopt -s extglob
-rm !(*gif|*jpg)</code>
+`shopt -s extglob
+rm !(*gif|*jpg)`
 ```
 
 - [ ] a
@@ -753,7 +755,7 @@ fi
 
 - [ ] There will be no unexpected results. This script works as is and the output will be "8 is greater than 5".
 - [ ] The comparison will not be able to handle floating-point numbers, as Bash only handles integers. So this example will output an error message if the value of $var is changed to "8.8".
-- [ ] There will be a file in the current directory named 5.
+- [x] There will be a file in the current directory named 5.
 - [ ] The variable $var is not quoted, which will lead to word splitting. This script will fail with a "unary operator expected" message if you change the value of
 
 #### Q60. What is the result of this script?
@@ -771,3 +773,221 @@ fi
 - [ ] SELinux policy rules are checked before DAC rules
 - [ ] SELinux policy rules are never checked after DAC rules.
 - [ ] None of these
+
+#### Q62. Which does the below command do?
+
+```bash
+w
+```
+
+- [ ] It doesn't display information about the users currently on the machine.
+- [x] It displays information about the users currently on the machine.
+- [ ] It displays information about the users currently on the another machine.
+- [ ] None of these
+
+#### Q63. Which sed options should you use to change the second-to-last instance of variable to rock so it would read:
+
+A constant is a variable that is a rock that isn't variable
+
+```bash
+var="A constant is a variable that is a variable that isn't variable"
+echo "$var" | sed _____
+```
+
+- [x] s/\(.*\)variable\(.*variable\)/\1rock\2/'
+- [ ] s/variable/rock/'
+- [ ] s/variable/rock/g'
+- [ ] s/(.*\)variable\(.*variable\)/\1rock\2/'
+
+#### Q64. To make a Bash script named script.sh executable, what should you run?
+
+- [ ] exec script.sh
+- [x] chmod +x script.sh
+- [ ] bash script.sh
+- [ ] source script.sh
+
+#### Q65. How can you create a shared terminal in a Bash shell?
+
+- [x] screen
+- [ ] screen -X
+- [ ] screen --shared
+- [ ] terminal -shared
+
+#### Q66. Wich operator sends the output of ls to a file for later use?
+
+- [ ] ls < filelist.txt
+- [ ] ls ¦ filelist.txt
+- [x] ls > filelist.txt
+- [ ] ls - filelist.txt
+
+#### Q67. When comparing items with case, what statement indicates an end to the evaluation block?
+
+- [ ] stop
+- [x] esac
+- [ ] done
+- [ ] exit
+
+#### Q68. To run a group of commands without spawning a subshell, which syntax would you use?
+
+- [ ] sh command1; command2
+- [ ] { command1; command2; }
+- [ ] (( command1; command2 ))
+- [x] command1; command2 )
+
+#### Q69. What are the results of the command with a user named jon?
+
+```bash
+echo 'Hello, $(whoami)!'
+```
+
+- [ ] Hello, $(jon)!
+- [ ] Hello, jon!
+- [x] Hello, $(whoami)!
+- [ ] Hello, whoami!
+
+#### Q70. How can you copy a directory to another system with compression?
+
+- [ ] tar -ssh user@192.158.1.1 /bin/newfile
+- [x] tar cvzf - /wwwdata | ssh root@192.168.1.201 "dd of=/backup/wwwdata.tar.gz"
+- [ ] You can't compress the stream
+- [ ] scp -r directory user@192.168.1.1:/tmp
+
+#### Q71. To assign the command `ls -lah` to the shortcut command `lh`, what command should you use?
+
+- [x] alias lh='ls -lah'
+- [ ] link lh='ls -lah'
+- [ ] alias 'ls -lah'=lh
+- [ ] lh | ls -lah
+
+#### Q72. Which statement will print all of the fully qualified .cvs files in the home directory or subdirectories while not displaying any errors?
+
+- [ ] find $USER_DIR -name "\*.csv" 2>/dev/null
+- [ ] find $HOME -name "\*.csv" 1>/dev/null
+- [x] find $HOME -name "\*.csv" 2>/dev/null
+- [ ] find HOME -name "\*.csv" 1>/dev/null
+
+#### Q73. In Bash, what does a # at the end of the default prompt string indicate?
+
+- [x] that the user is acting as root
+- [ ] that the current working directory is the root of the file system
+- [ ] that there are updates for the system available
+- [ ] that the user is unprivileged
+
+#### Q74. What will be the output of this command?
+
+```bash
+$ ls -l
+file10.txt
+file1.txt
+fileabc.txt
+filea.txt
+fileb.txt
+filec.txt
+$ ls -l file[^abc]*.txt
+```
+
+- [x] A
+
+```bash
+file1.txt
+file10.txt
+```
+
+- [ ] B
+
+```bash
+file10.txt
+file1.txt
+fileabc.txt
+filea.txt
+fileb.txt
+filec.txt
+```
+
+- [ ] C
+
+```bash
+fileabc.txt filea.txt fileb.txt filec.txt
+```
+
+- [ ] D
+
+```bash
+filea.txt
+fileb.txt
+filec.txt
+```
+
+The caret (`^`) symbol here negates matches inside the bracket. [Reference](https://tldp.org/LDP/abs/html/globbingref.html)
+
+#### Q75. What is the output of this command sequence?
+
+```bash
+cat <<EOF
+------------------------
+   This is line 1.
+   This is line 2.
+   This is line 3.
+------------------------
+EOF
+```
+
+- [ ] A
+
+```bash
+This is line 1.
+This is line 2.
+This is line 3.
+```
+
+- [ ] B
+
+```bash
+------------------------This is line 1.This is line 2.This is line 3.------------------------
+```
+
+- [x] C
+
+```bash
+------------------------
+   This is line 1.
+   This is line 2.
+   This is line 3.
+------------------------
+```
+
+- [ ] D
+
+```bash
+------------------------
+This is line 1.
+This is line 2.
+This is line 3.
+------------------------
+```
+
+#### Q76. What would be in out.txt?
+
+```bash
+#!/bin/bash
+
+echo 123446789 > out. txt
+exec 3<> out. txt
+read -n 4 <&3
+echo -n 5 >&3
+exec 3>&-
+```
+
+- [ ] 123446789
+- [ ] the hyphen symbol (-)
+- [x] 123456789
+- [ ] the number 5, which is written to the file using echo
+
+See [I/O Redirection](https://tldp.org/LDP/abs/html/io-redirection.html)
+
+#### Q77. Which variable contains the process ID (PID) of the script while it's running?
+
+- [ ] $ID
+- [ ] $#
+- [ ] $@
+- [x] $$

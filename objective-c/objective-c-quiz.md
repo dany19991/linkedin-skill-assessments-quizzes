@@ -386,7 +386,7 @@ dispatch_async(dispatch_get_main_queue(), ^{
 #### Q38. How many items are in set1 after this code executes?
 
 ```
-NSMutableSet *set1 = [NSMutableSet setWithObjects: @1,@2, @3, @4, @5, nil]; 
+NSMutableSet *set1 = [NSMutableSet setWithObjects: @1,@2, @3, @4, @5, nil];
 [set1 add0bject:@3];
 ```
 
@@ -394,3 +394,26 @@ NSMutableSet *set1 = [NSMutableSet setWithObjects: @1,@2, @3, @4, @5, nil];
 - [ ] six
 - [ ] one
 - [x] five
+
+#### Q39. What is wrong with this code?
+
+```
+NSDictionary *d1 = @[@"v1", @4, @"v2", @5.6, @"v3"];
+NSlog(@"d1: %@", d1);
+```
+
+- [ ] NSDictionary cannot be printed this way.
+- [x] The last key is missing a value.
+- [ ] Dictionaries cannot have mixed types as values.
+- [ ] d1 is assigned an NSArray of values.
+
+#### Q40. What is the initial value of the property `val`?
+
+```
+@property (nonatomic, readonly) int val;
+```
+
+- [ ] 8
+- [ ] nil
+- [ ] -1
+- [ ] undefined

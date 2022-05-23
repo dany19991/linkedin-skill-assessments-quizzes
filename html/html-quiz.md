@@ -345,10 +345,12 @@ On July 21, 1969, Neil Armstrong said, "One small step for man, one giant leap f
 </picture>
 ```
 
-- [ ] It displays image1.jpg at 1000px and higher, image2.jpg at 750-999px, and image3.jpg at 749px and lower.
+- [x] It displays image1.jpg at 1000px and higher, image2.jpg at 750-999px, and image3.jpg at 749px and lower.
 - [ ] It displays image1.jps at 1000px and higher and image2.jpg at 750-999px, image3.jpg is a default in case `<picture>` is not supported.
-- [x] It displays image1.jpg at 1000px and higher and image2.jpg at 750px and higher, image3.jpg is a default in case `<picture>` is not supported.
+- [ ] It displays image1.jpg at 1000px and higher and image2.jpg at 750px and higher, image3.jpg is a default in case `<picture>` is not supported.
 - [ ] It displays image1.jpg, image2.jpg and image3.jpg at 1000px and higher.
+
+[Source: HTML &lt;picture> Tag](https://www.w3schools.com/tags/tag_picture.asp)
 
 #### Q26. What code will produce this table?
 
@@ -434,7 +436,8 @@ On July 21, 1969, Neil Armstrong said, "One small step for man, one giant leap f
 - [ ] It designates a shift of topic at the section level.
 
 This is a confusing question and there can be an arguments for both the second and the third options being correct.
-From [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr): The HTML `<hr>` element represents a thematic break between paragraph-level elements. Historically, this has been presented as a horizontal rule or line. While it may still be displayed as a horizontal rule in visual browsers, this element is now defined in semantic terms, rather than presentational terms, so if you wish to draw a horizontal line, you should do so using appropriate CSS.
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr): The HTML `<hr>` element represents a thematic break between paragraph-level elements. Historically, this has been presented as a horizontal rule or line. While it may still be displayed as a horizontal rule in visual browsers, this element is now defined in semantic terms, rather than presentational terms, so if you wish to draw a horizontal line, you should do so using appropriate CSS.
 
 #### Q28. What should fill the two blanks in the HTML code below?
 
@@ -501,11 +504,15 @@ From [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr): The HT
 - [ ] `<kdb>`, `<mark>`
 - [x] `<code>`, `<pre>`
 
-#### Q32. What does the `<label>` tag do?
+[Source: MDN Web Docs code](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code)
+
+[Source: MDN Web Docs pre](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre)
+
+#### Q32. What does the `<label>` element do?
 
 - [ ] It labels webpages with important information.
-- [ ] It visually associates a text label with an interface element.
-- [ ] It visually labels from fields.
+- [ ] It creates an ID for a corresponding input element.
+- [ ] It overrides the name attribute's value on a child input element.
 - [x] It programmatically associates a text label with an interface element.
 
 #### Q33. To get a link to open in a new window or tab, use the **\_** attribute
@@ -610,7 +617,7 @@ From [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr): The HT
 - [ ] device
 - [x] media
 
-#### Q38. What is semantically correct way to mark up this layout?
+#### Q38. What is the semantically correct way to mark up this layout?
 
 ![quote](images/ss-5.png?raw=true)
 
@@ -901,7 +908,7 @@ From [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr): The HT
 - [ ] Use the `<pre>` tag to make the line spacing look exactly like you want.
 - [ ] Separate the lines with the `<br>` tag.
 
-#### Q58.What does the `<wbr>` tag do?
+#### Q58. What does the `<wbr>` tag do?
 
 - [ ] It requires the browser to wrap the current line at that point.
 - [ ] It breaks a word into two pieces, using a hyphen to connect the words.
@@ -911,15 +918,11 @@ From [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr): The HT
 #### Q59. Review the code below. How do you include subnavigation for Link 2 that includes a link?
 
 ```markdown
-<ul>
-  <li><!a href="#">Link 1</a></li>
-  <li><!a href="#">Link 2</a>
-    <ul>
-      <li><!a href="#">Link 2a</a></li>
-    </ul>
-  </li>
-  <li><!a href="#">Link 3</a></li>
-</ul>
+<nav><ul>
+  <li><a href="#">Link 1</a></li>
+  <li><a href="#">Link 2</a></li>
+  <li><a href="#">Link 3</a></li>
+</ul></nav>
 ```
 
 - [ ] A
@@ -931,7 +934,7 @@ From [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr): The HT
     <ul>
       <li><a href="#">Link 2a</a></li>
     </ul>
-  <li><a href="#">Link 3</a></li> 
+  <li><a href="#">Link 3</a></li>
 </ul></nav>
 ```
 
@@ -994,10 +997,12 @@ From [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr): The HT
 
 `Steve Kruz Said: "He will Win"`
 
-- [ ] `<q>`
-- [x] `<quote>`
+- [x] `<q>`
+- [ ] `<quote>`
 - [ ] `<blockquote>`
 - [ ] `<notation>`
+
+[Reference (w3schools)](https://www.w3schools.com/html/html_quotation_elements.asp)
 
 #### Q63. What is the semantic meaning of the `<hr>` tag?
 
@@ -1033,16 +1038,17 @@ From [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr): The HT
 - [x] It runs the script when the script is ready.
 - [ ] It pauses the parsing of HTML code while the script runs.
 
-#### Q67. What does this code?
+#### Q67. What does this code do on a page you are visiting for the first time?
 
 `<audio autoplay loop src="sound.mp3" type="audio/mpeg"></audio>`
 
-- [ ] When the **play** button is pressed, the browser plays the sounds over and over again until the user stops it.
+- [ ] When the **Play** button is pressed, the browser plays the sound over and over again until the user stops it.
 - [ ] The browser plays the sound once automatically in the background. The user has no control over the sound.
 - [ ] The browser plays the sound automatically and continuously in the background. The user may stop the sound at any tune.
-- [x] The browser plays the sound automatically and continuously in the background. The user has no control over the sound.
+- [x] It does nothing. Modern browsers require some form of interaction before they let a page autoplat with audio.
 
-[Reference(MDN)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)
+References [(MDN) audio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio),
+[(MDN) autoplay](https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide)
 
 #### Q68. What is the difference between the `<head>` and `<header>` tags?
 
@@ -1176,10 +1182,10 @@ From [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr): The HT
 
 #### Q74. Which snippet of HTML, when clicked, makes a phone call on a mobile device?
 
-- [x] `<a href="tel: 802-555-1212">Call me</a>`
+- [x] `<a href="tel:802-555-1212">Call me</a>`
 - [ ] `<a href="phone">802-555-1212</a>`
 - [ ] `<a href="tel">802-555-1212</a>`
-- [ ] `<a href="phone: 802-555-1212">Call me</a>`
+- [ ] `<a href="phone:802-555-1212">Call me</a>`
 
 #### Q75. What is the purpose of the `class` attribute?
 
@@ -1217,6 +1223,8 @@ As Steve Krug once said, happy talk must die.
 
 #### Q78. What is the most semantically accurate way to make up a main navigation bar, displayed in a horizontal direction?
 
+- [ ] A
+
 ```markdown
 <p>
   <a href="index.html">Home</a>
@@ -1225,7 +1233,7 @@ As Steve Krug once said, happy talk must die.
 </p>
 ```
 
-- [ ] A
+- [ ] B
 
 ```markdown
 <nav>
@@ -1235,7 +1243,7 @@ As Steve Krug once said, happy talk must die.
 </nav>
 ```
 
-- [ ] B
+- [ ] C
 
 ```markdown
  <nav>
@@ -1247,7 +1255,7 @@ As Steve Krug once said, happy talk must die.
   </nav>
 ```
 
-- [x] C
+- [x] D
 
 ```markdown
  <nav>
@@ -1263,7 +1271,7 @@ As Steve Krug once said, happy talk must die.
 
 ![Image of footer](images/ss-8.png?raw=true)
 
-- [ ] A
+- [x] A
 
 ```markdown
 <h4>Mailing Address</h4>
@@ -1274,7 +1282,7 @@ As Steve Krug once said, happy talk must die.
 </address>
 ```
 
-- [x] B
+- [ ] B
 
 ```markdown
 <h4><strong>Mailing Address</h4>
@@ -1372,10 +1380,14 @@ As Steve Krug once said, happy talk must die.
 
 #### Q86. What is the difference between the _readonly_ and _disabled_ attributes for the `<textarea>` element?
 
-- [ ] _readonly_ allows clicking in the `<textarea>` element. _disabled_ prevents all interaction with the control.
+- [x] _readonly_ allows clicking in the `<textarea>` element. _disabled_ prevents all interaction with the control.
 - [ ] _readonly_ is invalid attribute for `<textarea>`, while _disabled_ is a valid attribute.
 - [ ] _disabled_ allows clicking in the `<textarea>` element. _readonly_ prevents all interaction with the control.
 - [ ] _disabled_ is invalid attribute for `<textarea>`, while _readonly_ is a valid attribute.
+
+[Source: readonly](https://www.w3schools.com/tags/att_readonly.asp)
+
+[Source: disabled](https://www.w3schools.com/tags/att_disabled.asp)
 
 #### Q87. In this code, what is _target_?
 
@@ -1386,13 +1398,13 @@ As Steve Krug once said, happy talk must die.
 - [ ] content
 - [ ] an element
 
-#### Q88. What is the correct way to add a submit URL to a button element?
+#### Q88. What is the correct way to add a submit URL to a `button` element?
 
 - [ ] A
 
 ```HTML
 <button submit="http://example.com/process">
-      Process data
+  Process data
 </button>
 ```
 
@@ -1400,7 +1412,7 @@ As Steve Krug once said, happy talk must die.
 
 ```HTML
 <button action="http://example.com/process">
-      Process data
+  Process data
 </button>
 ```
 
@@ -1408,7 +1420,7 @@ As Steve Krug once said, happy talk must die.
 
 ```HTML
 <button formaction="http://example.com/process">
-      Process data
+  Process data
 </button>
 ```
 
@@ -1416,21 +1428,22 @@ As Steve Krug once said, happy talk must die.
 
 ```HTML
 <button method="http://example.com/process">
-      Process data
+  Process data
 </button>
 ```
 
+`formaction — The URL that processes the information submitted by the button. Overrides the action attribute of the button's form owner. Does nothing if there is no form owner.` [Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-formaction)
+
 #### Q89. Which is the best markup to produce this text?
 
-x<y&z>w
+`x<y&z>w`
 
 - [ ] `<p>x<y&z>w</p>`
-
-- [ ] `<p>x\<y&z\>w</p>`
-
+- [x] `<p>x\<y&z\>w</p>`
 - [ ] `<p>x<<y&&z>>w`
-
 - [ ] `<p>x<y&z>w</p>`
+
+`This question has an issue, however this answer will count as correct`
 
 `It's too strange question because all of that methods doesn't work. The good method is &amp, &lt, &gt using.`
 
@@ -1442,11 +1455,8 @@ x<y&z>w
 ```
 
 - [ ] The `<label>` and `<input>` should be nested inside of a `<fieldset>` element.
-
 - [ ] **"address"** is not a valid value for the attribute **name** on an `<input>` element.
-
 - [ ] The `<label>` element is missing an **id** set to "address-input".
-
 - [x] The `<label>` element is missing a **for** attribute set to "address-input".
 
 #### Q91. What is the default method for form submission?
@@ -1469,3 +1479,417 @@ x<y&z>w
 - [x] `<p lang="es">canci&oacuten</p>`
 - [ ] `<p lang="es">cancio'n</p>`
 - [ ] `<p lang="es">canci'on</p>`
+
+#### Q94. What is the purpose of `<caption>`?
+
+- [ ] `<caption>` provides captions for `<audio>`,`<video>`,`<img>`, and `<table>`.
+- [x] `<caption>` provides captions to `<table>`.
+- [ ] `<caption>` provides captions for `<audio>`, `<video>`, and `<table>`.
+- [ ] `<caption>` provides captions for `<img>`, `<audio>`, and `<video>`.
+
+#### Q95. The value attribute is associated with which set of tags ?
+
+- [x] A
+
+```HTML
+<li>
+<input>
+<option>
+```
+
+- [ ] B
+
+```HTML
+<input>
+<option>
+<textarea>
+```
+
+- [ ] C
+
+```HTML
+<button>
+<input>
+<form>
+```
+
+- [ ] D
+
+```HTML
+<input>
+<label>
+<meter>
+```
+
+#### Q96. What is wrong with this code?
+
+`<img src="https://source.unsplash.com/random">`
+
+- [ ] `<img>` should be paired with a `<caption>` tag.
+- [x] The `<img>` element is missing an alt attribute.
+- [ ] `<img>` is not a valid HTML element. Instead, use `<image src="..."/>`.
+- [ ] `<img>` should be nested within a `<figure>` tag.
+
+#### Q97. Which choice is the most semantically correct markup for specifying the first definition of a term?
+
+- [ ] `<p>`The `<dl>`focal length`</dl>` of a lens gives the distance from the lens to the image sensor.`</p>`
+- [x] `<p>`The `<dfn>`focal length`<dfn>` of a lens gives the distance from the lens to the image sensor.`</p>`
+- [ ] `<p>`The `<dt>`focal length`</dt>` of a lens gives the distance from the lens to the image sensor.`</p>`
+- [ ] `<p>`The `<dd>`focal length`</dd>` of a lens gives the distance from the lens to the image sensor.`</p>`
+
+`**Definition element => The <dfn> HTML element is used to indicate the term being defined within the context of a definition phrase or sentence. `<br>`**Description Term element => The <dt> HTML element specifies a term in a description or definition list, and as such must be used inside a <dl> element.`<br>` **Description Details element =>The <dd> HTML element provides the description, definition, or value for the preceding term (<dt>) in a description list (<dl>).`
+
+[Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn)
+
+#### Q98. Which choice is the best way to code three choices within a form so that the user can select multiple items?
+
+- [ ] <input type="radio" name="example"> Choice 1 <br/>
+      <input type="radio" name="example"> Choice 2 <br/>
+      <input type="radio" name="example"> Choice 3
+
+- [x] <input type="checkbox" name="example"> Choice 1 <br/>
+      <input type="checkbox" name="example"> Choice 2 <br/>
+      <input type="checkbox" name="example"> Choice 3
+
+- [ ] <label><input type="checkbox" name="example"> Choice 1</label><br/>
+      <label><input type="checkbox" name="example"> Choice 2</label><br/>
+      <label><input type="checkbox" name="example"> Choice 3</label>
+
+- [ ] <label><input type="radio" name="example"> Choice 1</label><br/>
+      <label><input type="radio" name="example"> Choice 2</label><br/>
+      <label><input type="radio" name="example"> Choice 3</label>
+
+`<input> elements of type checkbox are rendered by default as boxes that are checked (ticked) when activated, like you might see in an official government paper form. The exact appearance depends upon the operating system configuration under which the browser is running. Generally this is a square but it may have rounded corners.`
+
+[Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
+
+#### Q99. How would you mark up a piece of ASCII art (an emoticon) in an accessible way?
+
+- [x] `<pre role="emoticon" aria-label="ASCII emoticon of a shrug">¯\_(ツ)_/¯</pre>`
+- [ ] `<pre role="img" aria-label="ASCII emoticon of a shrug">¯\_(ツ)_/¯</pre>`
+- [ ] `<dfn title="ASCII emoticon of a shrug">¯\_(ツ)_/¯</dfn>`
+- [ ] `<label for="art">ASCII emoticon of a shrug</label><pre role="img" id="art">¯\_(ツ)_/¯</pre>`
+
+#### Q100. Which example is a standard way in HTML5 for adding author metadata to a page?
+
+- [ ] `<metadata name="author" content="Author Name">`
+- [ ] `<meta name="author">Author Name</meta>`
+- [ ] `<meta name="creator" content="Author Name">`
+- [x] `<meta name="author" content="Author Name">`
+
+#### Q101. Given the following requirements, select the correct `input` configuration: An `input` that allows the user to select from a range of integer values between 0 and 100 (inclusive) in increments of 5.
+
+- [ ] `<input type="range" min="0" max="100" by="5" />`
+- [x] `<input type="range" min="0" max="100" step="5" />`
+- [ ] `<input type="number" min="0" max="100" step="5" />`
+- [ ] `<input type="number" min="0" max="100" by="5" />`
+
+`<input> elements of type range let the user specify a numeric value which must be no less than a given value, and no more than another given value. The step attribute is a number that specifies the granularity that the value must adhere to.`
+
+[Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/range)
+
+#### Q102. Which choice is valid markup for a `<head>` element?
+
+- [ ] `<head class="Page Section Information" id="head"><title>Page Title</title></head>`
+- [ ] `<head><title>Page Title</title> <img src="favicon.icon" alt=""></head>`
+- [x] `<head><title>Page Title</title> <data value="email">email@example.com</data></head>`
+- [ ] `<head><title>Page Title</title><address>email@example.com</address></head>`
+
+`The <head> HTML element contains machine-readable information (metadata) about the document, like its title.The <data> tag is used to add a machine-readable translation of a given content.`
+[Source 1](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)/
+[Source 2](https://www.w3schools.com/tags/tag_data.asp)
+
+#### Q103. You need to add comments to the company blog. What is the most semantic markup for a list of comments?
+
+- [x] A
+
+```HTML
+<aside>
+  <h3>Comments</h3>
+  <article> First comment.</article>
+  <article> Second comment.</article>
+</aside>
+```
+
+- [ ] B
+
+```HTML
+<div aria="dpub-comments">
+  <h3>Comments</h3>
+  <div aria="dpub-comment"> First comment.</div>
+  <div aria="dpub-comment"> Second comment.</div>
+</div>
+```
+
+- [ ] C
+
+```HTML
+<aside>
+  <h3>Comments</h3>
+  <aside> First comment.</aside>
+  <aside> Second comment.</aside>
+</aside>
+```
+
+- [ ] D
+
+```HTML
+<div typeof="comments">
+  <h3>Comments</h3>
+  <div typeof="comment"> First comment.</div>
+  <div typeof="comment"> Second comment.</div>
+</div>
+```
+
+`The <article> HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Example:a user-submitted comment.`
+[Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)
+
+#### Q104. To make something editable by the user, you need to set the **\_** attribute to **\_**.
+
+- [ ] `access`; allow
+- [ ] `designMode`; true
+- [x] `contenteditable`; true
+- [ ] `contenteditable`; yes
+
+`The contenteditable global attribute is an enumerated attribute indicating if the element should be editable by the user. If so, the browser modifies its widget to allow editing. The attribute must take one of the following values: true or an empty string, which indicates that the element is editable; false, which indicates that the element is not editable.`
+[Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable)
+
+#### Q105. Which choice is the standard way to include a value in a form without making it visible to or editable by the user?
+
+- [ ] `<input type="invisible" name="important" value="information">`
+- [ ] `<input type="text" style="display: none;" name="important" value="information">`
+- [x] `<input type="hidden" name="important" value="information">`
+- [ ] `<input type="text" hidden name="important" value="information">`
+
+`<input> elements of type hidden let web developers include data that cannot be seen or modified by users when a form is submitted. For example, the ID of the content that is currently being ordered or edited, or a unique security token. Hidden inputs are completely invisible in the rendered page, and there is no way to make it visible in the page's content.` [Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden)
+
+#### Q106. What is the semantic way to add an identifying title to a table?
+
+- [ ] `<table><label>Heading</label>...</table>`
+- [ ] `<table><title>Heading</title>...</table>`
+- [ ] `<table><legend>Heading</legend>...</table>`
+- [x] `<table><caption>Heading</caption>...</table>`
+
+`The <caption> HTML element specifies the caption (or title) of a table.` [Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption)
+
+#### Q107. Which image file referenced in this `img` element's `srcset` attribute should a browser on a small mobile phone load?
+
+```html
+<img
+  srcset="medium.jpg 320w, large.jpg 1280w"
+  src="small.jpg"
+  alt="Our favorite image"
+  sizes="(min-width: 1200px) 640px, 100vw"
+/>
+```
+
+- [ ] small.jpg
+- [ ] medium.jpg
+- [ ] none of them
+- [x] large.jpg
+
+`The browser will: 1. Look at its device width. 2. Work out which media condition in the sizes list is the first one to be true. 3. Look at the slot size given to that media query. 4. Load the image referenced in the srcset list that has the same size as the slot or, if there isn't one, the first image that is bigger than the chosen slot size.` [Source](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
+
+#### Q108. Which description is coded correctly?
+
+- [x] A
+
+```HTML
+<dl>
+  <dt>Server</dt>
+  <dd>Software used to serve webpages, like Apache.</dd>
+  <dd> Hardware used to provide data to other computers.</dd>
+  <!-- Other terms and descriptions -->
+</dl>
+```
+
+- [ ] B
+
+```HTML
+<dt>
+  <dl>Server</dl>
+  <dd>Software used to serve webpages, like Apache.</dd>
+  <dd> Hardware used to provide data to other computers.</dd>
+  <!-- Other terms and descriptions -->
+</dt>
+```
+
+- [ ] C
+
+```HTML
+<dl>
+  <dt>Server</dt>
+  <dd>Software used to serve webpages, like Apache.</dd>
+  <dt> Hardware used to provide data to other computers.</dt>
+  <!-- Other terms and descriptions -->
+</dl>
+```
+
+- [ ] D
+
+```HTML
+<dl>
+  <dd>Server</dd>
+  <dt>Software used to serve webpages, like Apache.</dt>
+  <dt> Hardware used to provide data to other computers.</dt>
+  <!-- Other terms and descriptions -->
+</dl>
+```
+
+[Source 1](https://html.spec.whatwg.org/multipage/grouping-content.html#the-dl-element)
+[Source 2](https://www.w3schools.com/tags/tag_dl.asp)
+
+#### Q109. What is wrong with this code?
+
+```HTML
+<ul>
+  <h2>Espresso Drinks</h2>
+  <li>Espresso</li>
+  <li>Latte</li>
+  <li>Cappuccino</li>
+  <li>Mocha</li>
+</ul>
+```
+
+- [ ] Nothing is wrong.
+- [x] `<ul>` cannot contain a heading element as a direct child.
+- [ ] An `<h1>` should be used here instead of an `<h2>` tag.
+- [ ] Only `<ol>` allows direct descendants to contain elements other than an `<li>`, so use an `<ol>` here instead.
+
+`ul content model only accepts "Zero or more li and script-supporting elements".` [Source](https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element)
+
+#### Q110. A designer gave you CSS code that should run only when the device rendering the page is in dark mode. How would you embed that code?
+
+- [ ] `<style media="light-mode: false">/* CSS code */</style>`
+- [ ] `<style media="color-mode: dark">/* CSS code */</style>`
+- [x] `<style media="prefers-color-scheme: dark">/* CSS code */</style>`
+- [ ] `<style media="color-scheme: dark">/* CSS code */</style>`
+
+#### Q111. How would you mark up a header for a table row?
+
+- [x] A
+
+```HTML
+<table>
+  <thead scope="row"><th row="1">Header</th></thead>
+  <tr>
+    <td>10</td>
+    <td>18</td>
+  </tr>
+</table>
+```
+
+- [ ] B
+
+```HTML
+<table>
+  <tr>
+  <th scope="row">Header</th>
+    <td>10</td>
+    <td>18</td>
+  </tr>
+</table>
+```
+
+- [ ] C
+
+```HTML
+<table>
+  <tr>
+    <thead scope="row">Header</thead>
+    <td>10</td>
+    <td>18</td>
+  </tr>
+</table>
+```
+
+- [ ] D
+
+```HTML
+<table>
+  <tr>
+    <th>Header</th>
+    <td>10</td>
+    <td>18</td>
+  </tr>
+</table>
+```
+
+#### Q112. Which description list is coded correctly?
+
+- [ ] A
+
+```HTML
+<dl>
+  <dd>Server</dd>
+  <dt>Software used to serve webpages, like Apache.</dt>
+  <dt>Hardware used to provide data to other computers.</dt>
+  <!-- Other terms and descriptions -->
+</dl>
+```
+
+- [ ] B
+
+```HTML
+<dl>
+  <dt>Server</dt>
+  <dd>Software used to serve webpages, like Apache.</dd>
+  <dd>Hardware used to provide data to other computers.</dd>
+  <!-- Other terms and descriptions -->
+</dl>
+```
+
+- [ ] C
+
+```HTML
+<dt>
+  <dl>Server</dl>
+  <dd>Software used to serve webpages, like Apache.</dd>
+  <dd>Hardware used to provide data to other computers.</dd>
+  <!-- Other terms and descriptions -->
+</dt>
+```
+
+- [ ] D
+
+```HTML
+<dl>
+  <dt>Server</dt>
+  <dd>Software used to serve webpages, like Apache.</dd>
+  <dt>Hardware used to provide data to other computers.</dt>
+  <!-- Other terms and descriptions -->
+</dl>
+```
+
+#### Q113. What is the best semantic markup for this sentence? On July 21, 1969, Neil Armstrong said, "That's one small step for man, one giant leap for mankind.
+
+- [x] A
+
+```HTML
+  <p>On <time datetime="1969-07-21">July 21, 1969</time>, Neil Armstrong said, <q cite="https://www.hq.nasa.gov/alsj/a11/a11.step.html">That's one small step for man, one giant leap for mankind.</q></p>
+```
+
+- [ ] B
+
+```HTML
+<p>On <time datetime="07-21-1969">July 21, 1969</time>, Neil Armstrong said, <q cite="https://www.hq.nasa.gov/alsj/a11/a11.step.html">That's one small step for man, one giant leap for mankind.</q></p>
+```
+
+- [ ] C
+
+```HTML
+<p>On July 21, 1969, Neil Armstrong said, <q cite="https://www.hq.nasa.gov/alsj/a11/a11.step.html">"That's one small step for man, one giant leap for mankind."</q></p>
+```
+
+- [ ] D
+
+```HTML
+<p>On July 21, 1969, Neil Armstrong said, <q>"That's one small step for man, one giant leap for mankind."</q></p>
+```
+
+#### Q114. The value attribute is associated with which set of tags?
+
+- [ ] `<button> <input> <form>`
+- [x] `<li> <input> <option>`
+- [ ] `<input> <label> <meter>`
+- [ ] `<input> <option> <textarea>`

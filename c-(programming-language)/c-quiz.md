@@ -1,6 +1,6 @@
 ## C (Programming Language)
 
-##### Q1. Which Code sample will eventually cause the computer to run out of memory?
+#### Q1. Which Code sample will eventually cause the computer to run out of memory?
 
 - [x]
 
@@ -188,6 +188,8 @@ for (i= 10; i>0; i--){
 - [ ] register
 - [ ] typedef
 
+[Reference](https://www.ibm.com/docs/en/adfz/developer-for-zos/14.2.0?topic=programs-c-reserved-keywords)
+
 #### Q10. What does the program shown below return?
 
 ```c
@@ -242,6 +244,8 @@ main(){
 - [x] main() { }
 - [ ] main() { ; }
 
+[Reference](https://www.beningo.com/150-the-wolrds-shortest-c-program/)
+
 #### Q14. What is optional in a function declaration?
 
 - [ ] data type of parameters
@@ -263,12 +267,16 @@ main(){
 - [x] heap
 - [ ] data segment
 
-#### Q17. Which of the following do you use to deallocate memory?
+[Reference](http://www.it.uc3m.es/pbasanta/asng/course_notes/dynamic_memory_heap_en.html#:~:text=The%20dynamic%20memory%20that%20is,reads%20a%20set%20of%20words.)
+
+#### Q17. Which function do you use to deallocate memory?
 
 - [ ] dalloc()
 - [ ] dealloc()
 - [ ] release()
 - [x] free()
+
+[Reference](https://www.tutorialspoint.com/c_standard_library/c_function_free.htm)
 
 #### Q18. In C language what are the basic building blocks that are constructed together to write a program?
 
@@ -295,7 +303,7 @@ main(){
 
 - [ ] Objects; Structure
 - [ ] Variables; Declaration
-- [x] Data types; Memory location
+- [x] Data types; Memory space
 - [ ] Arrays; Header file
 
 #### Q22. What is the output of this program?
@@ -326,17 +334,17 @@ main() {
 char *string[20] = { "one", "two", "three"};
 ```
 
-- [ ] printf("%c", string[1][2]);
-- [x] printf("%s", string[1][2]);
-- [ ] printf("%s", string[1]);
-- [ ] printf(string[1]);
+- [ ] `printf("%c", string[1][2]);`
+- [x] `printf("%s", string[1][2]);`
+- [ ] `printf("%s", string[1]);`
+- [ ] `printf(string[1]);`
 
 #### Q25. What is the expression player->name equivalent to?
 
-- [ ] player.name
-- [x] (\*player).name
-- [ ] \*player.name
-- [ ] player.\*name
+- [ ] `player.name`
+- [x] `(\*player).name`
+- [ ] `\*player.name`
+- [ ] `player.\*name`
 
 #### Q26. Which program will compile and run without errors?
 
@@ -527,3 +535,360 @@ main(){
 - [ ] Compiler
 - [ ] Linker
 - [ ] Editor
+
+#### Q39. The main loop structures in C programming are the for loop, the while loop, and which other loop?
+
+- [x] do...while
+- [ ] for...in
+- [ ] repeat...until
+- [ ] do...until
+
+#### Q40. By default, C Functions are what type of functions?
+
+- [ ] global
+- [ ] static
+- [x] library
+- [ ] system
+
+#### Q41. You have written a function that you want to include as a member of structure a. How is such as structure member defiened?
+
+- [x]
+
+```c
+struct a {
+    void *f1;
+};
+```
+
+- [ ]
+
+```c
+struct a {
+    void (*f1)();
+};
+```
+
+- [ ]
+
+```c
+struct a {
+    *(void *f1)();
+};
+```
+
+- [ ]
+
+```c
+struct a {
+    void *f1();
+};
+```
+
+#### Q42. A Stack data structure allows all data operations at one end only, making it what kind of an implementation?
+
+- [ ] FIFO
+- [x] LIFO
+- [ ] LILO
+- [ ] LOLI
+
+#### Q43. What does this program display?
+
+```c
+main(){
+    char *p = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    int i;
+    for (i=0;i<5;i++) *p++; *p++;
+    printf("%c",*p++);
+}
+```
+
+- [ ] K
+- [ ] M
+- [ ] H
+- [x] G
+
+#### Q44. Describe the relationship between lvalue and rvalue.
+
+- [ ] An lvalue may appear only on the left-hand side of an assignment; an rvalue may appear only on the right-hand side.
+- [ ] An lvalue may appear only on the left-hand side of an assignment; an rvalue may appear on either the left-hand or right-hand side.
+- [ ] An lvaue and an rvalue may appear on either left-hand or right-hand side of an assignment.
+- [x] An lvalue may appear on the left-hand or right-hand side of an assignment; an rvalue may appear only on the right-hand side.
+
+#### Q45. Which operator is used to access the address of a variable?
+
+- [ ] `%`
+- [ ] `**`
+- [ ] `*`
+- [x] `&`
+
+#### Q46. Which add function properly returns the updated value of result?
+
+- [x]
+
+```c
+void add (int a, int b, int *result)
+{
+    *result = a+b;
+}
+
+main()
+{
+    int a = 10;
+    int b = 20;
+    int result = 0;
+
+    add(a,b,&result);
+}
+```
+
+- [ ]
+
+```c
+void add (int a, int b, int result)
+{
+    result = a+b;
+}
+
+main()
+{
+    int a = 10;
+    int b = 20;
+    int result = 0;
+
+    add(a,b,result);
+}
+```
+
+- [ ]
+
+```c
+void add (int a, int b, int *result)
+{
+    result = a+b;
+}
+
+main()
+{
+    int a = 10;
+    int b = 20;
+    int result = 0;
+
+    add(a,b,result);
+}
+```
+
+- [ ]
+
+```c
+void add (int *a, int *b, int *result)
+{
+    result = a+b;
+}
+
+main()
+{
+    int a = 10;
+    int b = 20;
+    int result = 0;
+
+    add(*a,*b,*result);
+}
+```
+
+#### Q47. Consider the number of the Fibonacci series below 100: 0,1,1,2,3,5,8,13,21,34,55,89. Which piece of code outputs the sequence?
+
+- [ ]
+
+```c
+void fibonacci(int a, int b)
+{
+    int c = a+b;
+
+    if(a>100)
+       return;
+
+    printf("%d", a);
+
+    fibonacci(a,b);
+}
+
+int main()
+{
+    fibonacci(0,1);
+}
+```
+
+- [ ]
+
+```c
+void fibonacci(int a, int b)
+{
+    int c = a+b;
+
+    if(a>100)
+       return;
+
+    printf("%d", b);
+
+    fibonacci(a,c);
+}
+
+int main()
+{
+    fibonacci(0,1);
+}
+```
+
+- [x]
+
+```c
+void fibonacci(int a, int b)
+{
+    int c = a+b;
+
+    if(a>100)
+       return;
+
+    printf("%d", a);
+
+    fibonacci(b,c);
+}
+
+int main()
+{
+    fibonacci(0,1);
+}
+```
+
+- [ ]
+
+```c
+void fibonacci(int a, int b)
+{
+    int c = a+b;
+
+    if(a>100)
+       return;
+
+    printf("%d", c);
+
+    fibonacci(b,c);
+}
+
+int main()
+{
+    fibonacci(0,1);
+}
+```
+
+#### Q48. Which is _not_ a storage class specifier?
+
+- [x] `intern`
+- [ ] `extern`
+- [ ] `register`
+- [ ] `static`
+
+[Reference](https://en.cppreference.com/w/cpp/language/storage_duration)
+
+#### Q49. Which line of code, after execution, results in `i` having the value of 1?
+
+- [ ] `for(i=1; i<=1; i++);`
+- [ ] `for(i=1; i=10; i++);`
+- [x] `for(i=1; i==10; i++);`
+- [ ] `for(i=10; i>=1; i--);`
+
+#### Q50. What is the value of variable c at the end of this program?
+
+```
+1 main() {
+2   int a, b, c;
+3   a=10; b=50;
+4   c=a * b % a;
+5 }
+```
+
+- [ ] 50
+- [ ] 5
+- [x] 0
+- [ ] 500
+
+#### Q51. What is _not_ one of the basic data types in C
+
+- [ ] long double
+- [ ] unsigned char
+- [x] array
+- [ ] float
+
+#### Q52. What is the member access operator for a structure?
+
+- [ ] ,
+- [ ] []
+- [x] .
+- [ ] :
+
+#### Q53. What standard data type provides the smallest storage size and can be used in computations?
+
+- [x] char
+- [ ] float
+- [ ] int
+- [ ] short
+
+#### Q54. what does the ctype tolower() function do?
+
+- [ ] It returns TRUE for lowercase letters of the alphabet.
+- [ ] It ensures that text output uses only ASCII values (0 through 127).
+- [ ] It returns FALSE for lowercase letters of the alphabet.
+- [x] It converts an uppercase letter of the alphabet to lowercase.
+
+#### Q55. Void pointer _vptr_ is assigned the address of float variable _g_. What is a valid way to dereference _vptr_ to assign its pointed value to a float variable named _f_ later in the program?
+
+```c
+float g;
+void *vptr=&g;
+```
+
+- [ ] f=(float \*)vptr;
+- [x] f=_(float _)vptr;
+- [ ] f=\*(float)vptr;
+- [ ] f=(float)\*vptr;
+
+#### Q56. Using a _for_ loop, how would you write C code to count down from 10 to 1 and display each number on its own line?
+
+- [ ]
+
+```c
+for(int i=10;1>0;) {
+    printf("%d\n", i);
+    i--;
+}
+```
+
+- [x]
+
+```c
+for (int i=10; i>0; i--)
+    printf("%d\n", i);
+```
+
+- [ ]
+
+```c
+for (int i=1; i<=10; i++)
+    printf("%d", i);
+```
+
+- [ ]
+
+```c
+for (int i=10; i>=0; i--)
+    printf("%d\n", i);
+```
+
+#### Q56. The dynamic memory allocation functions are defined in which system header file ?
+
+- [ ] stdio.h
+- [x] stdlib.h
+- [ ] limits.h
+- [ ] stddef.h
+
+[Reference](https://devdocs.io/c/memory)

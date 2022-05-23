@@ -335,9 +335,11 @@ Note: Free trial doesn't have the organizations.
 #### Q45. You need to optimize spending for always-on Compute Engine virtual machines of certain sizes and types-with minimum effort. What do you do?
 
 - [ ] Analyze machine usage to verify that machines will be on for more that 25% of the time, and verify that contained use discounts have been automatically applied to your bill.
-- [ ] Analyze machine usage to verify that machines will be on for more that 25% of the time, and verify that sustained use discounts have been automatically applied to your bill.
+- [x] Analyze machine usage to verify that machines will be on for more that 25% of the time, and verify that sustained use discounts have been automatically applied to your bill.
 - [ ] Analyze machine usage to verify that machines will be on for more than 25% of the time and purchase contained use discounts.
 - [ ] Analyze machine usage to verify that machines will be on for more than 25% of the time and purchase sustained use discounts.
+
+[Reference](https://cloud.google.com/compute/docs/sustained-use-discounts)
 
 #### Q46. You are designing a GCP replacement for your on-premises data warehouse. Which service do you select?
 
@@ -346,8 +348,6 @@ Note: Free trial doesn't have the organizations.
 - [ ] Cloud Spanner
 - [x] BigQuery
 
-[Source: LinkedIn Assessment Practice mode](https://i.imgur.com/mOCQVug.png)
-
 #### Q47. How can you quickly back up a persistent disk on Compute Engine?
 
 - [x] Take a snapshot
@@ -355,4 +355,84 @@ Note: Free trial doesn't have the organizations.
 - [ ] Create an instance template
 - [ ] Create an image
 
-[Source: LinkedIn Assessment Practice mode](https://i.imgur.com/9rNe5MV.png)
+#### Q48. You are implementing IAM roles for your organization following GCP best practice. Which statement best reflects this?
+
+- [ ] At minimum, you should have two levels of access: one for admins, one for users.
+- [ ] At minimum, you should have three levels of access: one for networking, one for security, one for developers.
+- [x] At minimum, you should have three levels of access: one for admins, one for security, one for users.
+- [ ] At minimum, you should have two levels of access: one for networking, one for developers.
+
+#### Q49. You need to quickly build an application that logs all file uploads to a Cloud Storage bucket. Which service do you select?
+
+- [x] Cloud Functions
+- [ ] Cloud Run
+- [ ] Google Kubernetes Engine
+- [ ] Google Compute Engine
+
+[Reference](https://cloud.google.com/functions#all-features)
+
+#### Q50. You need to answer the question "How long does it take my application to handle a given request?" What do you do?
+
+- [ ] Configure Stackdriver Error Reporting.
+- [ ] Configure Stackdriver Profiler.
+- [x] Configure Stackdriver Trace.
+- [ ] Configure Stackdriver Debug.
+
+[Reference](https://stackoverflow.com/questions/69434714/how-to-use-stackdriver-on-gcp-to-get-how-long-does-it-take-to-process-a-request)
+
+#### Q51. You want to select a fully managed, serverless platform for developing and hosting web applications at scale on GCP. Which service should you choose?
+
+- [x] Google App Engine.
+- [ ] Cloud Functions.
+- [ ] Google Kubernetes Engine.
+- [ ] Google Compute Engine.
+
+#### Q52. You have a set of exploratory queries that you want to run as inexpensively as possible in BigQuery. What should you do?
+
+- [ ] Set the job priority for each query to Batch and expect to see query results immediately.
+- [x] Set the job priority for each query to Interactive and expect to see query results immediately.
+- [ ] Set the job priority for each query to Batch and expect to see query results within 24 hours.
+- [ ] Set the job priority for each query to Batch and expect to see query results within 24 hours.
+
+Explanation: _BigQuery offers a choice of two pricing models for runnig queries: on-demand (you are charged for the number of bytes processes by each query) and flat-rate (you purchase slots - dedicated processing capacity)._ If the exploratory queries are one-off, running in Interactive mode using on-demand pricing seems to be the optimal answer.
+
+[Reference](https://cloud.google.com/bigquery/pricing)
+
+#### Q53. How do you run a Docker container image on a Google Compute Engine virtual machine?
+
+- [ ] Create a VM instance, and then SSH into the instance and install Kubernetes tools.
+- [ ] Create a VM instance, and then SSH into the instance and install Docker tools.
+- [ ] Create a VM instance and, in the web UI, select Allow HTTP traffic.
+- [x] Create a VM instance and, in the web Ul, select Deploy a container image to this instance.
+
+#### Q54. To configure a GCP Organization, which item should you create first?To configure a GCP Organization, which item should you create first?
+
+- [x] Admin account
+- [ ] Super Admin account
+- [ ] multi-factor authentication
+- [ ] recovery password
+
+#### Q55. Which container(s) does Google Kubernetes Engine support?Which container(s) does Google Kubernetes Engine support?
+
+- [ ] Docker or Singularity
+- [ ] Docker, Singularity, or containerd
+- [ ] Singularity only
+- [x] Docker only
+
+#### Q56. Cloud Genomics enables pipelines to run on top of which GCP service?Cloud Genomics enables pipelines to run on top of which GCP service?
+
+- [x] Cloud Dataflow
+- [ ] Google Kubernetes Engine
+- [ ] Cloud Dataproc
+- [ ] Compute Engine
+
+#### Q57. You want to encrypt a Compute Engine image. What do you need to do ?
+
+- [ ] Nothing. Images are encrypted by default with a Google - managed key.
+- [ ] Associate your image with the default Google-managed key to encrypt it.
+- [ ] Nothing. Images are encrypted by default with a customer-managed key.
+- [x] Associate your image with a customer-managed key to encrypt it.
+
+Explanation: Google does not store your keys on its servers and cannot access your protected data unless you provide the key. This also means that if you forget or lose your key, there is no way for Google to recover the key or to recover any data encrypted with the lost key.
+
+[Reference](https://cloud.google.com/compute/docs/disks/customer-supplied-encryption)

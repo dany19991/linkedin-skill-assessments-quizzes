@@ -20,7 +20,7 @@
 
 - [ ] Click New Items > New Appointment.
 - [ ] Click Calendar > New Meeting, and then copy and paste information as needed.
-- [ ] with the email open, click Meeting on the Home ribbon or Message tab.
+- [x] with the email open, click Meeting on the Home ribbon or Message tab.
 - [ ] Click Reply All.
 
 #### Q4. You are running low on Outlook storage space. How might you address this problem?
@@ -80,7 +80,7 @@ C. Read receipts are expensive, so some organizations turn them off.
 
 #### Q11. What does Outlook automatically point out to you when you are invited to a meeting?
 
-- [ ] if your attendance is mandatory
+- [x] if your attendance is mandatory
 - [ ] ifthe meeting is high or low priority
 - [ ] the amount of time you have between this meeting and your next event
 - [ ] if the meeting is adjacent to another event in your calendar
@@ -115,7 +115,7 @@ C. Read receipts are expensive, so some organizations turn them off.
 
 #### Q16. A message on your summary list appears with a paper clip icon and an arrow pointing to the left. What does this indicate?
 
-- [ ] The message has been replied to and contains an attachment
+- [x] The message has been replied to and contains an attachment
 - [ ] The message has been flagged and contains an attachment
 - [ ] None of these answers
 - [ ] The message has been forwarded and contains an attachment
@@ -136,7 +136,7 @@ C. Read receipts are expensive, so some organizations turn them off.
 
 #### Q19. There are two types of Outlook rules. One is server-based rules, which run for Exchange Server. What are the other kind, which in part or in whole cannot run on Exchange Server, and when do the execute?
 
-- [ ] client-only rules; when Outlook is running
+- [x] client-only rules; when Outlook is running
 - [ ] Outlook-based rules; when Outlook is running
 - [ ] None of these answers
 - [ ] Outlook-only rules; when Outlook is offline
@@ -158,7 +158,7 @@ C. Read receipts are expensive, so some organizations turn them off.
 #### Q22. What is not a built-in search filter for message folder?
 
 - [ ] Has Attachments
-- [ ] Sent to me as Bcc
+- [x] Sent to me as Bcc
 - [ ] Categorized
 - [ ] Not sent directly to me
 
@@ -180,15 +180,17 @@ C. Read receipts are expensive, so some organizations turn them off.
 
 - [ ] color
 - [ ] folder
-- [ ] name
+- [x] name
 - [ ] name and color
 
 #### Q26. Outlook autocompletes email addresses you have used previously, including addresses that you mistyped. How can you remove an incorrect autocomplete suggestion?
 
 - [ ] Search the autocomplete library, select the incorrect suggestion, and then click Delete
 - [ ] Close Outlook, reboot your computer, and restart Outlook
-- [ ] Wait until the suggestion appears again, then highlight it and press the Delete key
+- [x] Wait until the suggestion appears again, then highlight it and press the Delete key
 - [ ] Delete the corresponding contact
+
+[Reference](https://support.microsoft.com/en-us/office/manage-suggested-recipients-in-the-to-cc-and-bcc-boxes-with-auto-complete-dbe46e31-c098-4881-8cf7-66b037bce23e)
 
 #### Q27. What is the key difference between an appointment and a meeting?
 
@@ -206,7 +208,7 @@ C. Read receipts are expensive, so some organizations turn them off.
 
 #### Q29. You are viewing a date three months in the future, in Month view. You switch to check an email in the same window. When you switch back to the calendar, what will Outlook display?
 
-- [ ] the current month
+- [x] the current month
 - [ ] the Month view for a date three months in the future
 - [ ] the current date in Day view
 - [ ] the current date in Week view
@@ -214,7 +216,7 @@ C. Read receipts are expensive, so some organizations turn them off.
 #### Q30. When you @mention a colleague in an email message, what does not happen?
 
 - [ ] Your colleague's name is highlighted in the message
-- [ ] The colleague is automatically added to the To line
+- [x] The colleague is automatically added to the To line
 - [ ] @ appears next to the message in your colleague's Inbox
 - [ ] @ appears next to the email in your Sent items folder (Sent folder in Outlook for Mac)
 
@@ -229,7 +231,7 @@ C. Read receipts are expensive, so some organizations turn them off.
 
 - [ ] Asking your supervisor to prioritize a list of tasks
 - [ ] Sending customers a three-question survey about a recent service experience
-- [ ] Asking your colleagues to choose their favorite lunch spot from a list
+- [x] Asking your colleagues to choose their favorite lunch spot from a list
 - [ ] All of these answers
 
 #### Q33. You created a meeting for next Tuesday at 2 PM, and several invitees have accepted. How do you change the meeting so it will begin at 1 PM and last for one hour?
@@ -248,13 +250,13 @@ C. Some people have already accepted, so you must cancel this meeting and create
 #### Q34. What permission allows your delegates to read, create, change, and delete items that they create, but not items that you created?
 
 - [ ] Reader
-- [ ] Author
+- [x] Author
 - [ ] Reviewer
 - [ ] Editor
 
 #### Q35. Why might you create an additional contacts folder?
 
-- [ ] To store contacts to share with colleagues
+- [x] To store contacts to share with colleagues
 - [ ] To avoid exceeding 500 contacts per folder limit
 - [ ] To make it faster to search for your contacts
 - [ ] All of these answers
@@ -269,7 +271,7 @@ C. Some people have already accepted, so you must cancel this meeting and create
 #### Q37. When accepting a meeting invitation, what happens if you click "Do not send a response"?
 
 - [ ] Outlook will send an email to the meeting organizer on your behalf
-- [ ] The meeting organizer will not receive an email with your response, and your response will be recorded
+- [x] The meeting organizer will not receive an email with your response, and your response will be recorded
 - [ ] The meeting organizer will not receive an email with your response, and your response will not be recorded
 - [ ] None of these answers
 
@@ -278,21 +280,23 @@ C. Some people have already accepted, so you must cancel this meeting and create
 - [ ] You set time constraints for looking events
 - [ ] You automatically switch to list view
 - [ ] You change the time zone that your calendar uses
-- [ ] You change the number of hours visible on the grid
+- [x] You change the number of hours visible on the grid
 
 #### Q39. Which is not a good reason to create a new calendar?
 
 - [ ] To keep track of personal events in a work setting
 - [ ] To use a shared calendar with colleagues
 - [ ] To isolate meetings and important dates for a project team
-- [ ] To have a different view of your calendar
+- [x] To have a different view of your calendar
 
 #### Q40. Under what conditions can you successfully recall a message?
 
-- [ ] Only when the recipient is also using Outlook
+- [x] Only when the recipient is also using Outlook
 - [ ] Only if the email is plain text without attachments
 - [ ] If the email si still in your outbox
 - [ ] If the email was sent within the past 24 hours
+
+[Reference](https://support.microsoft.com/en-us/office/recall-or-replace-an-email-message-that-you-sent-35027f88-d655-4554-b4f8-6c0729a723a0)
 
 #### Q41. What rule can you create in View Settings to color code messages from a particular senderm such as your manager?
 
@@ -329,9 +333,9 @@ D. Because you cannot create a search folder for a subfolder
 - [ ] user; new messages and replies
 - [ ] user; new messages and replies or forwards
 
-#### Q45. While using Focused Inbox, you notice that Outlook sometimes puts important messages from a specific customer on th Another tab. How do you fix this for future messages?
+#### Q45. While using Focused Inbox, you notice that Outlook sometimes puts important messages from a specific customer on the other tab. How do you fix this for future messages?
 
-- [ ] Right-click a message that was incorrectly organized and click Move to Focused.
+- [x] Right-click a message that was incorrectly organized and click Move to Focused.
 - [ ] Right-click a message that was incorrectly organized and click Always Move to Focused.
 - [ ] Close the Outlook application and relaunch.
 - [ ] Locate that customer in the People Hub and select the Focused check box.
@@ -352,12 +356,12 @@ D. Because you cannot create a search folder for a subfolder
 
 #### Q48. For efficiency, how should you save a search that you run frequently?
 
-- [ ] as a search folder (Smart Folder on Mac)
+- [x] as a search folder (Smart Folder on Mac)
 - [ ] none of these answers
 - [ ] as a column
 - [ ] as a criteria set
 
-#### Q49. When you compose and email and click the To or Cc button, where does Outlook search first?
+#### Q49. When you compose an email and click the To or Cc button, where does Outlook search first?
 
 - [ ] none of these answers
 - [ ] your People list
@@ -413,7 +417,7 @@ D. Because you cannot create a search folder for a subfolder
 - [ ] Highlight the email in the viewing pane and sort by From,
 - [ ] Enter the person's email address into the search box.
 - [ ] On the Folder tab, click New Search Folder and select Mail from specific people.
-- [ ] Right-click the email and select Find Related > Messages from sender.
+- [x] Right-click the email and select Find Related > Messages from sender.
 
 #### Q57. What does the ignore button allow you to do?
 
@@ -485,7 +489,12 @@ D. Because you cannot create a search folder for a subfolder
 - [ ] Open your computer's Recycle Bin (Windows) or Trash (Mac).
 - [ ] Click the Undo button.
 
-#### Q67. You are viewing your calendar in work week view and see a thin horizonatal line running IEWING YOUR CALENDAR IN WORK WEEK VIEW AND SEE A THIN HORIZONTAL LINE RUNNING ACROSS ALL DAYS AT THE 2:30 P.M. POSITION. WHAT DOES THIS TELL YOU?
+#### Q67. You are viewing your calendar in Work Week view and see a thin horizontal line running across all days at the 2:30 p.m. position. What does this tell you?
+
+- [ ] Your next appointment is at 2:30 p.m.
+- [ ] You have a recurring appointment at 2:30 p.m.on each day of the week.
+- [ ] Your calendar is free from 2:30 p.m. on.
+- [x] The current time is 2:30 p.m.
 
 #### Q68. You have a message in your Inbox that has a blue down arrow. What does it mean?
 
@@ -501,21 +510,21 @@ D. Because you cannot create a search folder for a subfolder
 - [ ] Tag
 - [ ] Quick Steps
 
-#### Q70.In Outlook, a rule is applied to
+#### Q70. In Outlook, a rule is applied to
 
 - [ ] contacts
 - [ ] messages
 - [ ] tasks
 - [ ] meetings
 
-#### Q71.You want to change the default font used for new messages and in the Notes field in Calendar, Contacts, and Tasks. How do you do this?
+#### Q71. You want to change the default font used for new messages and in the Notes field in Calendar, Contacts, and Tasks. How do you do this?
 
 - [ ] Change the fonts used for mail in File > Options > Mail > Stationery and Fonts (Windows) or Outlook > Preferences > Fonts (Mac). The fonts used in the Notes field in Calendar, Contacts, and Tasks cannot be changed.
 - [ ] Click File > Options > General > Stationery and Fonts (Windows) or Outlook > Preferences > Composing (Mac).
 - [ ] Click File > Options > Mail > Stationery and Fonts (Windows) or Outlook > Preferences > Fonts (Mac).
 - [ ] Select the desired font in a new message. Outlook will use it for future messages and notes.
 
-#### Q72.What does the Groups section contain in Outlook?
+#### Q72. What does the Groups section contain in Outlook?
 
 - [ ] Microsoft 365 Groups you are a member of
 - [ ] Microsoft 365 Groups across your company
@@ -533,7 +542,7 @@ D. Because you cannot create a search folder for a subfolder
 
 - [ ] Change your computer's display and resolution settings.
 - [ ] Reply to the email, select all, and increase the font size.
-- [ ] Use the Zoom button.
+- [x] Use the Zoom button.
 - [ ] Change the Message Preview option to the maximum 3 lines setting.
 
 #### Q74. You are sending an email to several people, and you want any responses to go to a colleague. How can you set this up?
@@ -555,11 +564,162 @@ D. Because you cannot create a search folder for a subfolder
 - [ ] a subfolder
 - [ ] a compressed file
 - [ ] a file system folder
-- [ ] an archive
+- [x] an archive
+
+[Reference](https://www.extendoffice.com/documents/outlook/5238-outlook-move-items-older-than.html)
 
 #### Q77. What happens when you delete a folder that contains emails in Outlook?
 
 - [ ] The folder is emptied and then moved to Deleted Items.
 - [ ] You cannot delete a folder until its contents are deleted first.
 - [ ] The contents are moved to Deleted Items, and then the empty folder is moved to Deleted Items.
-- [ ] The folder and its contents are moved to Deleted Items at the same time.
+- [x] The folder and its contents are moved to Deleted Items at the same time.
+
+#### Q78. You have been tasked with inviting 75 people to an event. You do not need to track whether or not they intend to attend. To save time, what should you do?
+
+- [ ] Add all recipients to the Bcc Field.
+- [ ] Turn off Request Responses under Response Options.
+- [ ] Use mail merge to send the invitations.
+- [ ] Add "NRR (no response required)" to the subject line
+
+#### Q79. You are organizing your Outlookfolders. For all emails that are sent directly to you, they should appear in your inbox. For all emails on which you are cc'd, they should be automatically hidden for later review. What is the best way to accomplish these goals?
+
+- [x] Create a Ccd folder, and then create a rule to move all messages where you are on the cc line to that folder.
+- [ ] Create a rule to move all messages where you are in the Cc line to the Deleted items folder.
+- [ ] Turn on Focused Inbox.
+- [ ] Create a rule to apply conditional formatting to all messages where you are in the Cc line.
+
+#### Q80. You created a meeting for next Tuesday at 2 p.m., and several invitees have accepted. How do you change the meeting so it will begin at 1 p.m.?
+
+A. Open the calendar in Day, Week, or Work Week view. Drag the start time to 1 p.m. and send an update.  
+B. Double-click the meeting to open it, change the start time to 1 p.m., and send an update.  
+C. Some people have already accepted, so you must cancel this meeting and create a new meeting.
+
+- [ ] A or B
+- [x] B
+- [ ] C
+- [ ] А
+
+#### Q81. Which is not valid search criteria when searching for messages in your Inbox?
+
+- [ ] attachments
+- [ ] words found in the message itself
+- [ ] who sent the email
+- [x] what geographic location the email was sent from
+
+#### Q82. You copied several paragraphs of text to the clipboard and want to paste this text into the body of a new task. What is the most efficient way to do this?
+
+- [ ] Click the Task icon and then press Ctrl+V (Windows) or Command+V (Mac).
+- [x] Open a task form using Ctrl+Shift+K (Windows) or Command+Shift+K (Mac), click in the body, and then press Ctrl+V (Windows) or Command+V (Mac).
+- [ ] Click the Task icon and, on the Home tab, click New from Clipboard.
+- [ ] Click the Task icon and, on the Insert tab, click New Items > More Items > Paste Special.
+
+#### Q83. What is a key difference between flagging a message for follow-up and creating a task from the item?
+
+- [ ] A task will sync with Microsoft To-Do; a flagged email will not.
+- [x] You can set a reminder for a task, but not for a flagged item.
+- [ ] A task can be assigned to another person while a flagged item cannot be delegated.
+- [ ] The flagged message appears only in the Inbox folder; the task appears in the To-Do bar and task list.
+
+#### Q84. What allows Outlook to automatically flag, forward, move, tag, and respond to email messages?
+
+- [x] Rules
+- [ ] Quick Parts
+- [ ] Categorize
+- [ ] Quick Steps
+
+#### Q85. What is the easiest way to add the contact of someone who sent you an email?
+
+- [ ] Copy and paste their email address into a new contact form.
+- [x] Right-click the sender's name in the message and select Add to Outlook Contacts (Windows) or Open Outlook contacts (Mac).
+- [ ] Double-click the sender's email address in the message and select Add to Outlook Contacts (Windows) or Open Outlook contacts (Mac).
+- [ ] # Open the email and press Ctrl+Q (Windows) or Command+Q (Mac).
+- [ ] Create a rule to apply conditional formatting to all messages where you are in the cc line.
+
+#### Q80. You created a meeting for next Tuesday at 2 p.m., and several invitees have accepted. How do you change the meeting so it will begin at 1 p.m.?
+
+A. Open the calendar in Day, Week, or Work Week view. Drag the start time to 1 p.m. and send an update.  
+B. Double-click the meeting to open it, change the start time to 1 p.m., and send an update.  
+C. Some people have already accepted, so you must cancel this meeting and create a new meeting.
+
+- [ ] A or B
+- [x] B
+- [ ] C
+- [ ] А
+
+#### Q81. Which is not valid search criteria when searching for messages in your Inbox?
+
+- [ ] attachments
+- [ ] words found in the message itself
+- [ ] who sent the email
+- [x] what geographic location the email was sent from
+
+#### Q82. You copied several paragraphs of text to the clipboard and want to paste this text into the body of a new task. What is the most efficient way to do this?
+
+- [ ] Click the Task icon and then press Ctrl+V (Windows) or Command+V (Mac).
+- [x] Open a task form using Ctrl+Shift+K (Windows) or Command+Shift+K (Mac), click in the body, and then press Ctrl+V (Windows) or Command+V (Mac).
+- [ ] Click the Task icon and, on the Home tab, click New from Clipboard.
+- [ ] Click the Task icon and, on the Insert tab, click New Items > More Items > Paste Special.
+
+#### Q83. What is a key difference between flagging a message for follow-up and creating a task from the item?
+
+- [ ] A task will sync with Microsoft To-Do; a flagged email will not.
+- [x] You can set a reminder for a task, but not for a flagged item.
+- [ ] A task can be assigned to another person while a flagged item cannot be delegated.
+- [ ] The flagged message appears only in the Inbox folder; the task appears in the To-Do bar and task list.
+
+#### Q84. What allows Outlook to automatically flag, forward, move, tag, and respond to email messages?
+
+- [x] Rules
+- [ ] Quick Parts
+- [ ] Categorize
+- [ ] Quick Steps
+
+#### Q85. What is the easiest way to add the contact of someone who sent you an email?
+
+- [ ] Copy and paste their email address into a new contact form.
+- [x] Right-click the sender's name in the message and select Add to Outlook Contacts (Windows) or Open Outlook contacts (Mac).
+- [ ] Double-click the sender's email address in the message and select Add to Outlook Contacts (Windows) or Open Outlook contacts (Mac).
+- [ ] Open the email and press Ctrl+Q (Windows) or Command+Q (Mac).
+
+#### Q86. You type an email and click Send, but your internet connection is currently unavailable. Where does Outlook store the unsent email?
+
+- [x] Outbox
+- [ ] Drafts
+- [ ] Archive
+- [ ] Sent Items
+
+#### Q87. You have been tasked with inviting 75 people to an event. You do not need to track whether or not they intend to attend. to save time, what should you do?
+
+- [ ] Use mail merge to send the invitations.
+- [x] Turn off Request Responses under Response Options.
+- [ ] Add "NRR (no response required)" to the subject line.
+- [ ] Add all recipients to the Bcc field.
+
+#### Q88. You opened an email message and Outlook is not displaying the included pictures. Why is this?
+
+- [ ] Outlook automatically converts email to HTML.
+- [ ] Outlook can display only pictures stored in JPG format.
+- [x] Pictures need to be downloaded
+- [ ] Outlook cannot show pictures in emails.
+
+#### Q89. What does the Work Offline (Windows) or Online/Offline toggle (Mac) do?
+
+- [ ] It stops incoming emails but allows outgoing emails.
+- [ ] It allows incoming emails but stops outgoing emails.
+- [ ] It disconnects the computer from the network.
+- [x] It disconnects Outlook from the server to stop incoming and outgoing emails.
+
+#### Q90. Which feature tags a person in an email thread and sends them a flagged message?
+
+- [ ] Permissions
+- [ ] Mail Tips
+- [x] Mentions
+- [ ] Share
+
+#### Q91. You want to share a file with collegues via email. Why is it a benefit to embed a link to the file in your email, rather than attach the actual file?
+
+- [ ] It takes up less space in their mailboxes.
+- [ ] It takes up less space in your mailbox.
+- [ ] It allows better version control of the file..
+- [x] all of these answers

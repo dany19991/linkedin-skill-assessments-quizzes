@@ -6,7 +6,7 @@
 let val = (Double)6
 ```
 
-- [x] an error
+- [x] a syntax issue
 - [ ] typecasting
 - [ ] assignment
 - [ ] initialization
@@ -72,14 +72,14 @@ vals.sort { (s1, s2) -> Bool in
 #### Q7. What does this code print?
 
 ```swift
-typealias Thing = [String, Any]
+typealias Thing = [String:Any]
 var stuff: Thing
 print(type(of: stuff))
 ```
 
-- [ ] Dictionary<String, Any> (To print this than code in question has to be `typealias Thing = [String: Any]`)
+- [x] Dictionary<String, Any>
 - [ ] Dictionary
-- [x] ERROR (If code in question is really like that.)
+- [ ] ERROR
 - [ ] Thing
 
 #### Q8. What is the value of y?
@@ -163,7 +163,7 @@ let value1 = "\("test".count)"
 
 - [x] when it's executed after the function returns
 - [ ] when it's scope is undefined
-- [ ] when is's lazy loaded
+- [ ] when it's lazy loaded
 - [ ] all of these answers
 
 #### Q16. What's wrong with this code?
@@ -250,10 +250,10 @@ var vals = Set<String> = ["4", "5", "6"]
 vals.insert("5")
 ```
 
-- [x] three
+- [ ] three
 - [ ] four
 - [ ] eight
-- [ ] This code contains an error.
+- [x] This code contains an error.
 
 #### Q23. How can you avoid a strong reference cycle in a closure?
 
@@ -744,7 +744,7 @@ print(s1)
 - [ ] raw values
 - [ ] custom values
 
-#### Q66. In the code below, AOM must be a(n) \_?
+#### Q66. In the code below, AOM must be a(n)?
 
 ```swift
 class AmP : MMM, AOM {
@@ -755,3 +755,50 @@ class AmP : MMM, AOM {
 - [x] protocol
 - [ ] enumeration
 - [ ] struct
+
+#### Q67. What is the value of numbers in the code below?
+
+```swift
+let numbers = [1,2,3,4,5,6].filter{ $0 % 2 == 0}
+```
+
+- [ ] [1,3,5]
+- [ ] []
+- [x] [2,4,6]
+- [ ] nil
+
+#### Q68. What is the type of `vals` in this code?
+
+```swift
+let vals = ["a", 1, "Hi"]
+```
+
+- [ ] Array(char)
+- [x] [Any]
+- [ ] Array<char>
+- [ ] [Generic]
+
+#### Q69. How can you extract val to `x` in tuple `vt`
+
+```swift
+let vt = (name: "ABC", val: 5)
+```
+
+- [ ] let x = vt.1
+- [x] all of these answers
+- [ ] let x = vt.val
+- [ ] let (`_`, x) = vt
+
+#### Q70. What is wrong with this code?
+
+```swift
+class Person {
+    var name: String
+    var address: String
+}
+```
+
+- [ ] var `name`is not formatted correctly.
+- [x] `Person` has no initialisers.
+- [ ] 'Person` has no base class.
+- [ ] `address` is a keyword.

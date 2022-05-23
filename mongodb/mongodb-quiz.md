@@ -277,8 +277,10 @@
 
 - [ ] `db.vehicle.distinct("category")`
 - [ ] `db.vehicle.unique("category")`
-- [x] `db.vehicle.distinct("category").count()`
-- [ ] `db.vehicle.distinct("category").length`
+- [ ] `db.vehicle.distinct("category").count()`
+- [x] `db.vehicle.distinct("category").length`
+
+Note: count() works with find(...) but length works with distinct
 
 #### Q41. From the MongoDB shell, how do you create a new document in the customers collection?
 
@@ -331,8 +333,8 @@
 
 #### Q48. By default, applications direct their read operations to which member of the replica set?
 
-- [ ] primary
-- [x] arbiter
+- [x] primary
+- [ ] arbiter
 - [ ] secondary
 - [ ] backup
 
@@ -491,3 +493,98 @@
 - [ ] row number
 
 [Reference](https://docs.mongodb.com/manual/reference/operator/aggregation/project/#definition)
+
+#### Q71. After installing MongoDB on your machine, what must you do before launching Mongo?
+
+- [ ] Create a user account.
+- [ ] Register online.
+- [ ] Create a data directory.
+- [x] Establish security credentials.
+
+[mongodb site](https://docs.mongodb.com/manual/tutorial/verify-mongodb-packages/#verify-integrity-of-mongodb-packages)
+
+#### Q72. How does a --jsonArray file need to be structured?
+
+- [x] as a properly formatted JSON array
+- [ ] as YAML
+- [ ] as plain text
+- [ ] as a BSON object
+
+[Section blog](https://www.section.io/engineering-education/handling-json-in-mongodb/)
+
+#### Q73. From the MongoDB shell, how do you display all of a database's memory usage?
+
+- [ ] db.size()
+- [ ] db.info()
+- [ ] db.memory()
+- [ ] db.stats()
+
+#### Q74. How do you create a new MongoDB user?
+
+- [x] db.createUser({})
+- [ ] db.insert({user: 1})
+- [ ] db.customers.newUser({})
+- [ ] db.newUser({})
+
+[MongoDB documentation](https://docs.mongodb.com/manual/tutorial/create-users/)
+
+#### Q75. What is the internal data structure of a MongoDB document?
+
+- [x] JSON (JavaScript Object Notation)
+- [ ] BSON (Binary JSON)
+- [ ] ORM (object relational mode)
+- [ ] MBF (MongoDB binary format)
+
+[MongoDB documentation](https://docs.mongodb.com/guides/server/introduction/)
+
+#### Q76. Which projection shows only the FirstName and lastName fields of a document in the customers collection?
+
+- [ ] `db.customers.find({}, {firstName: 1, lastName: 1})`
+- [x] `db.customers.find({}, {_id:0, firstName: 1, lastName: 1})`
+- [ ] `db.customers.find({_id: 0, year: 1, maek: 1, model: 1})`
+- [ ] `db.customers.find({}).project({firstName: 1, lastName: 1})`
+
+#### Q77. Documents in mongodb are atomic at the \_\_\_ level
+
+- [ ] database
+- [ ] field
+- [ ] no
+- [x] document
+
+[MongoDB reference](https://www.mongodb.com/docs/manual/core/write-operations-atomicity/#:~:text=In%20MongoDB%2C%20a%20write%20operation,documents%20within%20a%20single%20document.)
+
+#### Q78. What should the priority of a member be in order to prevent it from becoming the primary in replica set?
+
+- [ ] 1
+- [ ] null
+- [x] 0
+- [ ] -1
+
+[MongoDB reference](https://www.mongodb.com/docs/manual/tutorial/configure-secondary-only-replica-set-member/#assign-priority-value-of-0)
+
+#### Q79. You need to add an index to the large name collection in your production database. You do not want to have disruption of service for your users and you can't afford to have a team to do the work during after hours. What should you do?
+
+- [ ] Use the reIndex() command to add the index quickly.
+- [x] Use the createIndex() command with the option background = true.
+- [ ] Use the createIndex() command.
+- [ ] Use the createIndex() command with the option parallel = true.
+
+[MongoDB reference](https://www.mongodb.com/docs/v4.0/reference/method/db.collection.createIndex/#options)
+
+#### Q80. When using aggregation $convert. which is not a parameter?
+
+- [ ] input
+- [x] output
+- [ ] to
+- [ ] onError
+
+[MongoDB reference](https://www.mongodb.com/docs/manual/reference/operator/aggregation/convert/#definition)
+
+#### Q81. All tag values in tag sets must be \_.
+
+- [ ] JSON
+- [ ] integers
+- [x] strings
+- [ ] XML
+
+[MongoDB reference](https://www.mongodb.com/docs/manual/core/read-preference-tags/)

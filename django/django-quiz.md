@@ -23,10 +23,33 @@
 
 #### Q4. A client wants their site to be able to load "Rick & Morty" episodes by number or by title—e.g., shows/3/3 or shows/picklerick. Which URL pattern do you recommend?
 
-- [ ] url(r'shows/<int:season>/<int:episode>/', views.episode_number)
-- [x] path('shows/<int:season>/<int:episode>/', views.episode_number),
-- [ ] path('shows/<int:season>/<int:episode>', views.episode_number),
-- [ ] url(r'^show/(?P<season>[0-9]+)/(?P<episode>[0-9]+)/$', views.episode_number),
+- [ ] <span>
+
+```
+url(r'shows/<int:season>/<int:episode>/', views.episode_number),
+url(r'shows/<slug:episode_name>/', views.episode_name)
+```
+
+- [x] <span>
+
+```
+path('shows/<int:season>/<int:episode>/', views.episode_number),
+path(r'shows/<slug:episode_name>/', views.episode_name)
+```
+
+- [ ] <span>
+
+```
+path('shows/<int:season>/<int:episode>', views.episode_number),
+path(r'shows/<slug:episode_name>/', views.episode_number)
+```
+
+- [ ] <span>
+
+```
+url(r'^show/(?P<season>[0-9]+)/(?P<episode>[0-9]+)/$', views.episode_number),
+url(r'^show/(?P<episode_name>[\w-]+)/', views.episode_name
+```
 
 #### Q5. How do you determine at startup time if a piece of middleware should be used?
 
@@ -107,7 +130,7 @@
 
 #### Q17. How would you define the relationship between a star and a constellation in a Django model?
 
-- [x]
+- [x] <span>
 
 ```
 class Star(models.Model):
@@ -116,7 +139,7 @@ class Constellation(models.Model):
 stars = models.ManyToManyField(Star)
 ```
 
-- [ ]
+- [ ] <span>
 
 ```
 class Star(models.Model):
@@ -125,7 +148,7 @@ class Constellation(models.Model):
 stars = models.ForeignKey(Star, on_delete=models.CASCADE)
 ```
 
-- [ ]
+- [ ] <span>
 
 ```
 class Star(models.Model):
@@ -134,7 +157,7 @@ class Constellation(models.Model):
 stars = models.OneToManyField(Star)
 ```
 
-- [ ]
+- [ ] <span>
 
 ```
 class Star(models.Model):
@@ -227,7 +250,7 @@ name = models.CharField(max_length=100)
 - [ ] use aggregate functions more easily
 - [ ] build reusable QuerySets
 
-#### Q30. Which is not a django filed type for integers?
+#### Q30. Which is not a Django filed type for integers?
 
 - [ ] SmallIntegerField
 - [x] NegativeIntegerField
@@ -280,7 +303,7 @@ name = models.CharField(max_length=100)
 
 #### Q37. How would you define the relation between a book and an author - book has only one author.
 
-- [ ]
+- [ ] <span>
 
 ```
 class Author (models.model):
@@ -289,7 +312,7 @@ class Book(models.model):
 name=models.charfield(max_length=100)
 ```
 
-- [x]
+- [x] <span>
 
 ```python
 class Author (models.model):
@@ -298,7 +321,7 @@ class Book(models.model):
 author=models.foreignkey(Author,on_delete=models.cascade)
 ```
 
-- [ ]
+- [ ] <span>
 
 ```
 class Author (models.model):
@@ -307,7 +330,7 @@ class Book(models.model):
 author=models.foreignkey(Author)
 ```
 
-- [ ]
+- [ ] <span>
 
 ```
 class Author (models.model):
@@ -316,7 +339,7 @@ class Book(models.model):
 author=models.foreignkey(Author,on_delete=models.cascade)
 ```
 
-- [ ]
+- [ ] <span>
 
 ```
 class Author (models.model):
@@ -366,14 +389,14 @@ Lots of spark
 - [ ] Nothing needed
 - [ ] {percentage end percentage}
 
-#### Q43 Which code block will create a serializer?
+#### Q43. Which code block will create a serializer?
 
 ```
 from rest_framework import serializers
 from .models import Planet
 ```
 
-- [x]
+- [x] <span>
 
 ```
 class PlanetSerializer(serializers.ModelSerializer):
@@ -382,7 +405,7 @@ model=Planet
 fields=('name','position', 'mass', 'rings')
 ```
 
-- [ ]
+- [ ] <span>
 
 ```
 from rest_framework import serializers
@@ -393,7 +416,7 @@ fields=('name','position', 'mass', 'rings')
 model=Planet
 ```
 
-- [ ]
+- [ ] <span>
 
 ```
 from django.db import serializers
@@ -403,7 +426,7 @@ fields=('name','position', 'mass', 'rings')
 model=Sandwich
 ```
 
-- [ ]
+- [ ] <span>
 
 ```
 from django.db import serializers
@@ -414,14 +437,14 @@ fields=('name')
 model=Planet
 ```
 
-#### Q44 Which class allows you to automatically create a Serializer class with fields and validators that correspond to your model's fields?
+#### Q44. Which class allows you to automatically create a Serializer class with fields and validators that correspond to your model's fields?
 
 - [x] ModelSerializer
 - [ ] Model
 - [ ] DataSerializer
 - [ ] ModelToSerializer
 
-#### Q45 Which command to access the built-in admin tool for the first time?
+#### Q45. Which command to access the built-in admin tool for the first time?
 
 - [ ] django-admin setup
 - [ ] django-admin runserver
@@ -522,9 +545,107 @@ model=Planet
 - [ ] SongView
 - [x] ListView
 
-#### Q55. Which statement is most acurate, regarding using the default SQLite database on your local/development machine but Postgres in production
+#### Q58. Which statement is most accurate, regarding using the default SQLite database on your local/development machine but Postgres in production
 
 - [x] There's less chance of introducing bugs since SQLite already works out the box
 - [ ] It's fine, you just need to keep both instances synchronized
 - [ ] It's a bad idea and could lead to issues down the road
 - [ ] It's the most efficient way to build a project
+
+#### Q59. Why might you want to write a custom model Manager?
+
+- [ ] to perform database queries
+- [ ] to set up a database for testing
+- [x] to modify the initial QuerySet that the Manager returns
+- [ ] to filter the results that a database query returns
+
+#### Q60. In Django, what are used to customize the data that is sent to the templates?
+
+- [ ] models
+- [x] views
+- [ ] forms
+- [ ] serializers
+
+#### Q61. To complete the conditional, what should this block of code end with?
+
+```shell
+% if sparles >= 50 %
+  Lots of sparkles!
+% elif sparkles == 42 %
+  The answer to life, the universe, and everything!
+```
+
+- [x] `% endif %`
+- [ ] Nothing else is needed.
+- [ ] `% end%`
+- [ ] `% else %`
+
+#### Q62. You have inherited a Django project and need to get it running locally. It comes with a requirements.txt file containing all its dependencies. Which command should you use?
+
+- [ ] python install -r requirements.txt
+- [ ] django-admin startproject requirements.txt
+- [ ] pip install Django
+- [x] pip install -r requirements.txt
+
+#### Q63. When should you employ the POST method over the GET method for submitting data from a form?
+
+- [x] when the data in the form may be sensitive
+- [ ] when you want the data to be cached
+- [ ] when you want to use your browser to help with debugging
+- [ ] when efficiency is important
+
+#### Q64. What is a callable that takes a value and raises an error if the value fails to meet some criteria?
+
+- [ ] mediator
+- [x] validator
+- [ ] regular expression
+- [ ] deodorizer
+
+#### Q65. You are uploading a file to Django from a form and you want to save the received file as a field on a model object. You can simply assign the file object from**\_to a field of type\_\_**in the model.
+
+- [ ] request.META; FileField
+- [ ] request.FILES; BLOBField
+- [x] request.FILES; FileField
+- [ ] request.META.Files; CLOBField
+
+#### Q66. What python module might be used to store the current state of a Django model in a file?
+
+- [x] pickle
+- [ ] struct
+- [ ] marshal
+- [ ] serialize
+
+#### Q66. To add a new app to an existing Django project, you must edit the **_ section of the _** file.
+
+- [ ] ALLOWED_HOSTS; settings.py
+- [ ] APPS; manage.py
+- [x] INSTALLED_APPS; settings.py
+- [ ] TEMPLATES; urls.py
+
+#### Q67. Which is not a third-party package commonly used for authentication?
+
+- [ ] django-guardian
+- [ ] django-rest-auth
+- [ ] authtoken
+- [x] django-rest-framework-jwt
+
+#### Q68. Which function in the django.urls package can help you avoid hardcoding URLS by generating a URL given the name of a view?
+
+- [ ] get_script_prefix()
+- [ ] redirect()
+- [x] reverse()
+- [ ] resolve()
+
+#### Q69. Which is Fictional HTTP request method?
+
+- [ ] POST
+- [ ] PUT
+- [x] PAUSE
+- [ ] PATCH
+
+#### Q70. Which is not a Django field type for holding integers?
+
+- [x] NegativeIntegerField
+- [ ] SmallIntegerField
+- [ ] PositiveIntegerField
+- [ ] BigAutoField

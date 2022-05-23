@@ -18,7 +18,7 @@
 
 - [ ] Set breakpoints and then step through the code line by line
 - [ ] Use the profiler tools in Android Studio to detect anomalies CPU, and network usage.
-- [x] Add a Thread.sleep()call before you start the new activity.
+- [x] Add a Thread.sleep() call before you start the new activity.
 - [ ] inspect the logs in Logcat.
 
 #### Q4. Why might push notifications stop working?
@@ -214,6 +214,8 @@
 
 #### Q15. Why do you use the AndroidJUnitRunner when running UI tests?
 
+Notice: AndroidJUnitRunner lets us run JUnit3/4-style tests on Android Devices
+
 - [x] The test runner facilitates loading your test package and the app under test onto a device or emulator, runs the test, and reports the results.
 - [ ] The test runner creating screenshots of each screen that displayed while tests are executed.
 - [ ] The test runner facilitates parallelization of test classes by providing for each test class.
@@ -221,10 +223,12 @@
 
 #### Q16. What allows you to properly restore a user's state when an activity is restarted?
 
-- [x] the onSaveInstance()method
-- [ ] all of these answers
+- [ ] the onSaveInstance()method
+- [x] all of these answers
 - [ ] persistent storage
 - [ ] ViewModel objects
+
+[Refrence](https://developer.android.com/topic/libraries/architecture/saving-states)
 
 #### Q17. Given the definition below. how would you get access a TextView with an ID of text_home contained in thr layout file of a Fragment class?
 
@@ -253,8 +257,10 @@
 
 - [ ] Although screen pixel density varies, this does not impact the use of pixels to define sizes.
 - [ ] Large devices always have more pixels, so your UI elements will be e=affected if you define them with pixels.
-- [ ] The same number of pixels may correspond to different physical sizes, affecting the appearance of your UI elements.
-- [x] Different devices have different understanding of what a pixel is , affecting the appearance of your UI elements
+- [x] The same number of pixels may correspond to different physical sizes, affecting the appearance of your UI elements.
+- [ ] Different devices have different understanding of what a pixel is , affecting the appearance of your UI elements
+
+[Reference](https://developer.android.com/training/multiscreen/screendensities#:~:text=The%20first%20pitfall%20you%20must,physical%20sizes%20on%20different%20devices.)
 
 #### Q21. You need to get a list of devices that are attached to your computer with USB debugging enable. Which command would execute using the Android Debug Bridge?
 
@@ -360,9 +366,9 @@
 `android.permission.ACCESS_NETWORK_STATE`
 
 - [ ] to monitor the location of the devices so that you don't attempt to make network calls when the user is stationary
-- [x] to request the ability to make network calls from your app
+- [ ] to request the ability to make network calls from your app
 - [ ] to monitor the network state of the device so that you can display an in-app banner to the user
-- [ ] to monitor the network state of the devices so that you don't attempt to make network calls when the network is unavailable
+- [x] to monitor the network state of the devices so that you don't attempt to make network calls when the network is unavailable
 
 #### Q29. Which image best corresponds to the following `LinearLayout`?
 
@@ -410,7 +416,7 @@ startActivity(dialerIntent)
 
 #### Q31. When should you store files in the `/assets` directory?
 
-- [x] when you need access to the original file names and file hierarchy
+- [x] when you need access to the original file names and file hierarchy [(Reference)](https://medium.com/mobile-app-development-publication/assets-or-resource-raw-folder-of-android-5bdc042570e0)
 - [ ] when you need access to the file with its `resource ID`, like `R.assets.filename`
 - [ ] when you have XML files that define tween animations
 - [ ] when you need to access the file in its raw form using `Resources.openRawResource()`
@@ -488,7 +494,7 @@ buildTypes {
 - [ ] JPG
 - [ ] PNG
 - [ ] MPEG
-- [x] WebP
+- [x] WebP [(Reference)](https://developer.android.com/topic/performance/reduce-apk-size#:~:text=packJPG%20and%20guetzli.-,Use%20WebP%20file%20format,than%20either%20JPEG%20or%20PNG.)
 
 #### Q36. You have built code to make a network call and tested that it works in your development environment. However, when you publish it to the Play console, the networking call fails to work. What will _not_ help you troubleshoot this issue?
 
@@ -655,8 +661,8 @@ xml
 
 - [ ] Use a common Gradle module shared by different Android projects.
 - [ ] Prefer to build custom views or fragments over activities.
-- [ ] Prefer to build activities instead of fragments.
-- [x] Break down UI layouts into common elements and use `<include/>` to include them in other layout XML files.
+- [x] Prefer to build activities instead of fragments.
+- [ ] Break down UI layouts into common elements and use `<include/>` to include them in other layout XML files.
 
 #### Q42. Which layout is best for large, complex hierarchies?
 
@@ -719,7 +725,7 @@ xml
 	</rectangle>
 ```
 
-- [ ]
+- [x]
 
 ```
 xml
@@ -751,7 +757,7 @@ xml
 
 - [ ] View B is not horizontally constrained.
 - [ ] View C has too many constraints.
-- [ ] View B is not vertically constrained.
+- [x] View B is not vertically constrained.
 - [ ] View C is constrained to the parent.
 
 #### Q48. Given this code snippey from a build.gradle file, which choice is not a possible build variant?
@@ -792,8 +798,8 @@ xml
 
 - [ ] This APK is created on a developer machine from the debug product flavor.
 - [ ] This APK is created from the internalDebug product flavor.
-- [x] This APK created from the debug product flavor and internal build type.
-- [ ] This APK is created from the debug build type and internal product flavor.
+- [ ] This APK created from the debug product flavor and internal build type.
+- [x] This APK is created from the debug build type and internal product flavor.
 
 #### Q51. When attempting to build your project, what might the following error indicate?
 
@@ -910,23 +916,25 @@ override fun onCreate(savedInstanceState: Bundle?) { super.onCreate(savedInstanc
 - [ ] Intent(this, AboutActivity::class).also { intent ->
       startService(intent)
       }
-- [ ] Intent(this, AboutActivity::class.java).also { intent ->
+- [x] Intent(this, AboutActivity::class.java).also { intent ->
       startActivity(intent)
       }
 
 - [ ] Intent(this, AboutActivity::class).also { intent ->
       activity(intent)
       }
-- [x] Intent(this, AboutActivity::class).also { intent ->
+- [ ] Intent(this, AboutActivity::class).also { intent ->
       startActivity(intent)
       }
+      Explanation: Intent(Context packageContext, Class<?> cls)
+      Notice: Class not KClass
 
 #### Q59. What is the use of AndroidManifest.xml file?
 
-- [ ] It describes the component ofthe application
+- [x] It describes the component of the application
 - [ ] It declares the minimum level of the android API that the application requires
 - [ ] It facilitates to provide a uinque name for the application by specifying package name
-- [x] All of the above
+- [ ] All of the above
 
 #### Q60. Which attribute of the element <uses-sdk> is used to specify the minimum API Level required for the application to run?
 
@@ -941,12 +949,13 @@ override fun onCreate(savedInstanceState: Bundle?) { super.onCreate(savedInstanc
 - [ ] ProGuard
 - [ ] Shrinker
 - [ ] D8
+      Explanation: When you build your project using Android Gradle plugin 3.4.0 or higher, the plugin no longer uses ProGuard to perform compile-time code optimization. Instead, the plugin works with the R8 compiler to handle
 
 [Reference](https://developer.android.com/studio/build/shrink-code)
 
 #### Q62. Which layout hierarchy is likely to be drawn the most quickly?
 
-- [ ] A
+- [x] A
       ![img](https://i.imgur.com/mT08jag.png)
 
 - [ ] B
@@ -957,3 +966,36 @@ override fun onCreate(savedInstanceState: Bundle?) { super.onCreate(savedInstanc
 
 - [ ] D
       ![img](https://i.imgur.com/1QBrTwR.png)
+
+#### Q63. What is the current recommended way to handle long-running background tasks?
+
+- [x] WorkManager
+- [ ] AsyncTask
+- [ ] IntentService
+- [ ] Thread
+
+[Reference](https://developer.android.com/guide/background)
+
+#### Q64. You need to provide your users with certain features of your app on-demand or as instant experiences through Google Play. Which type of module should you create?
+
+- [ ] library module
+- [x] dynamic feature module
+- [ ] Android app module
+- [ ] Google Cloud module
+
+1. [Reference](https://youtu.be/QdfStuj-MuA?t=86)
+2. [Reference](https://developer.android.com/guide/playcore/feature-delivery/on-demand)
+
+#### Q65. Which approach is not recommended for providing a useful offline state in your app?
+
+- [ ] caching data
+- [ ] storing data locally
+- [ ] queuing outbound requests to action when connectivity has been lost
+- [ ] always notifying users that connectivity has been lost
+
+#### Q66. If you need your app code to inspect information about the current build, which class should you use?
+
+- [x] `BuildConfig`
+- [ ] `BuildInfo`
+- [ ] `ConfigParams`
+- [ ] `ConfigInfo`
